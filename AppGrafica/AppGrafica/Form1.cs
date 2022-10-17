@@ -1,4 +1,4 @@
-namespace ViewPort
+namespace AppGrafica
 {
     public partial class Form1 : Form
     {

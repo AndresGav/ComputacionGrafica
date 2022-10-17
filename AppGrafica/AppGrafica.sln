@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewPort", "ViewPort.csproj", "{CA4D726A-7BE4-4247-A722-56DD66E09E9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppGrafica", "AppGrafica\AppGrafica.csproj", "{FA2A4697-97BA-4A29-8CE0-AF4A50D19FEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CA4D726A-7BE4-4247-A722-56DD66E09E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA4D726A-7BE4-4247-A722-56DD66E09E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA4D726A-7BE4-4247-A722-56DD66E09E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA4D726A-7BE4-4247-A722-56DD66E09E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2A4697-97BA-4A29-8CE0-AF4A50D19FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2A4697-97BA-4A29-8CE0-AF4A50D19FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2A4697-97BA-4A29-8CE0-AF4A50D19FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2A4697-97BA-4A29-8CE0-AF4A50D19FEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {61057CA4-58F1-4DF4-8B68-E5CB32487462}
+		SolutionGuid = {5407149F-A0F8-43C1-9DBE-A3E6F3158F00}
 	EndGlobalSection
 EndGlobal

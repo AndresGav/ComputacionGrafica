@@ -1,4 +1,4 @@
-namespace ViewPort
+namespace AppGrafica
 {
     internal static class Program
     {

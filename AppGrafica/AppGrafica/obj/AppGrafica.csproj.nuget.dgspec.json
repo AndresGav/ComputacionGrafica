@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\\Documentos\\ESPOCH - PROJECTS\\ComputacionGrafica\\ViewPort\\ViewPort.csproj": {}
+    "C:\\Users\\andre\\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\\Documentos\\ESPOCH - PROJECTS\\ComputacionGrafica\\AppGrafica\\AppGrafica\\AppGrafica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\\Documentos\\ESPOCH - PROJECTS\\ComputacionGrafica\\ViewPort\\ViewPort.csproj": {
+    "C:\\Users\\andre\\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\\Documentos\\ESPOCH - PROJECTS\\ComputacionGrafica\\AppGrafica\\AppGrafica\\AppGrafica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\\Documentos\\ESPOCH - PROJECTS\\ComputacionGrafica\\ViewPort\\ViewPort.csproj",
-        "projectName": "ViewPort",
-        "projectPath": "C:\\Users\\andre\\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\\Documentos\\ESPOCH - PROJECTS\\ComputacionGrafica\\ViewPort\\ViewPort.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\\Documentos\\ESPOCH - PROJECTS\\ComputacionGrafica\\AppGrafica\\AppGrafica\\AppGrafica.csproj",
+        "projectName": "AppGrafica",
+        "projectPath": "C:\\Users\\andre\\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\\Documentos\\ESPOCH - PROJECTS\\ComputacionGrafica\\AppGrafica\\AppGrafica\\AppGrafica.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\\Documentos\\ESPOCH - PROJECTS\\ComputacionGrafica\\ViewPort\\obj\\",
+        "outputPath": "C:\\Users\\andre\\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\\Documentos\\ESPOCH - PROJECTS\\ComputacionGrafica\\AppGrafica\\AppGrafica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
