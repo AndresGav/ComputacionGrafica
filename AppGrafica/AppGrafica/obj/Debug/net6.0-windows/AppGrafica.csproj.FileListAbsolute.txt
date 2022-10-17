@@ -1,0 +1,17 @@
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\bin\Debug\net6.0-windows\AppGrafica.exe
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\bin\Debug\net6.0-windows\AppGrafica.deps.json
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\bin\Debug\net6.0-windows\AppGrafica.runtimeconfig.json
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\bin\Debug\net6.0-windows\AppGrafica.dll
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\bin\Debug\net6.0-windows\AppGrafica.pdb
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\AppGrafica.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\AppGrafica.Form1.resources
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\AppGrafica.csproj.GenerateResource.cache
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\AppGrafica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\AppGrafica.AssemblyInfoInputs.cache
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\AppGrafica.AssemblyInfo.cs
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\AppGrafica.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\AppGrafica.dll
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\refint\AppGrafica.dll
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\AppGrafica.pdb
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\AppGrafica.genruntimeconfig.cache
+C:\Users\andre\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - PROJECTS\ComputacionGrafica\AppGrafica\AppGrafica\obj\Debug\net6.0-windows\ref\AppGrafica.dll
