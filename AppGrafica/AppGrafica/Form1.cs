@@ -1,10 +1,15 @@
+using System.Security.Cryptography.Xml;
+using System.Windows.Forms;
+
 namespace AppGrafica
 {
     public partial class Form1 : Form
     {
         public static int width = 700, height = 500;
+
         //bitmap
         Bitmap bmp = new Bitmap(width, height);
+       
 
         public Form1()
         {
@@ -69,5 +74,82 @@ namespace AppGrafica
         {
             return ((inicial * (x - 700)) / -700) + ((final * x) / 700);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Vector obj = new Vector();
+            
+            
+            double x = -2;
+
+            do
+            {
+                obj.setX(x);
+                obj.setY(x*x-5);
+                obj.Encender(bmp);
+                x+=0.05;
+
+            } while (x <= 3);
+
+            pictureBox1.Image = bmp;
+        }
+
+        internal class Vector
+        {
+            public double x0;
+            public double y0;
+            public Color color0 = Color.Black;
+
+            public static int sx1 = 0;
+            public static int sy1 = 0;
+            public static int sx2 = 700;
+            public static int sy2 = 500;
+
+            private double x1 = -7, x2 = 5;
+            private double y1 = -5, y2 = 4;
+
+            public Vector()
+            {
+            }
+
+            public Vector(double x0, double y0, Color color0)
+            {
+                this.x0 = x0;
+                this.y0 = y0;
+                this.color0 = color0;
+            }
+
+            public void setX(double x)
+            {
+                this.x0 = x;
+            }
+            public void setY(double y)
+            {
+                this.y0 = y;
+            }
+
+            public void Encender(Bitmap canva)
+            {
+                int sX;
+                int sY;
+
+                Pantalla(x0, y0, out sX, out sY);
+
+                if (sX >= 0 && sX < 700 && sY >= 0 && sY < 500)
+                {
+                    canva.SetPixel(sX, sY, color0);
+                }
+            }
+
+
+            public void Pantalla(double x, double y, out int sx, out int sy)
+            {
+                sx = (int)(((x - x1) / (x1 - x2)) * (sx1 - sx2)) + sx1;
+                sy = (int)(((y - y2) / (y2 - y1)) * (sy1 - sy2)) + sy1;
+            }
+        }
+
+
+
     }
 }
