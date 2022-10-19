@@ -77,19 +77,49 @@ namespace AppGrafica
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Vector obj = new Vector();
-            
-            
-            double x = -2;
+            Segmento objSeg = new Segmento();
+            Circunferencia objCir = new Circunferencia();
+           
+            objSeg.x0 = -5;
+            objSeg.y0 = 3;
+            objSeg.xf = 2;
+            objSeg.yf = -3;
+            objSeg.color = Color.Red;
+            objSeg.Encender(bmp);
 
-            do
-            {
-                obj.setX(x);
-                obj.setY(x*x-5);
-                obj.Encender(bmp);
-                x+=0.05;
+            objSeg.x0 = -5;
+            objSeg.y0 = -3;
+            objSeg.xf = 2;
+            objSeg.yf = 3;
+            objSeg.color = Color.Black;
+            objSeg.Encender(bmp);
 
-            } while (x <= 3);
+
+            objSeg.x0 = -3;
+            objSeg.y0 = -3;
+            objSeg.xf = -3 ;
+            objSeg.yf = 3;
+            objSeg.color = Color.Blue;
+            objSeg.Encender(bmp);
+
+            //CIRCULOS
+            objCir.rd = 0.3;
+            objCir.x0 = -2.5;
+            objCir.color = Color.DarkGreen;
+            objCir.Encender(bmp);
+
+            objCir.rd = 0.6;
+            objCir.x0 = -1.4;
+            objCir.y0 = 1;
+            objCir.color = Color.YellowGreen;
+            objCir.Encender(bmp);
+
+
+            objCir.rd = 1;
+            objCir.x0 = 1;
+            objCir.y0 = 0;
+            objCir.color = Color.Red;
+            objCir.Encender(bmp);
 
             pictureBox1.Image = bmp;
         }
@@ -98,7 +128,7 @@ namespace AppGrafica
         {
             public double x0;
             public double y0;
-            public Color color0 = Color.Black;
+            public Color color;
 
             public static int sx1 = 0;
             public static int sy1 = 0;
@@ -112,11 +142,11 @@ namespace AppGrafica
             {
             }
 
-            public Vector(double x0, double y0, Color color0)
+            public Vector(double x0, double y0, Color color)
             {
                 this.x0 = x0;
                 this.y0 = y0;
-                this.color0 = color0;
+                this.color = color;
             }
 
             public void setX(double x)
@@ -128,6 +158,15 @@ namespace AppGrafica
                 this.y0 = y;
             }
 
+            public double getX()
+            {
+                return x0;
+            }
+            public double getY()
+            {
+                return y0;
+            }
+
             public void Encender(Bitmap canva)
             {
                 int sX;
@@ -137,7 +176,7 @@ namespace AppGrafica
 
                 if (sX >= 0 && sX < 700 && sY >= 0 && sY < 500)
                 {
-                    canva.SetPixel(sX, sY, color0);
+                    canva.SetPixel(sX, sY, this.color);
                 }
             }
 
@@ -149,6 +188,54 @@ namespace AppGrafica
             }
         }
 
+
+        internal class Segmento : Vector
+        {
+            public int xf;
+            public int yf;
+
+            public void Encender(Bitmap bmp)
+            {
+                double t = 0;
+                double dt = 0.001;
+
+                Vector obj = new Vector();
+
+                do
+                {
+                    obj.setX(x0 + (xf - x0) * t);
+                    obj.setY(y0 + (yf - y0) * t);
+                    obj.color = color;
+                    obj.Encender(bmp);
+                    t += dt;
+
+                } while (t <= 1);
+            }
+        }
+
+        internal class Circunferencia: Vector
+        {
+           
+            public double rd;
+            
+             public void Encender(Bitmap bmp)
+            {
+                double t = 0;
+                double dt = 0.001;
+
+                Vector obj = new Vector();
+
+                do
+                {
+                    obj.setX(x0 + rd * Math.Cos(t));
+                    obj.setY(y0 + rd * Math.Sin(t));
+                    obj.color = color;
+                    obj.Encender(bmp);
+                    t += dt;
+
+                } while (t <= 2* Math.PI);
+            }
+        }
 
 
     }
