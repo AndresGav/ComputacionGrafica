@@ -124,118 +124,24 @@ namespace AppGrafica
             pictureBox1.Image = bmp;
         }
 
-        internal class Vector
+        private void button6_Click(object sender, EventArgs e)
         {
-            public double x0;
-            public double y0;
-            public Color color;
+            Test obj = new Test();
+            obj.x0 = 0;
+            obj.y0 = 0;
+            obj.color = Color.Red;
+            obj.Encender(bmp);
+            pictureBox1.Image = bmp;
+        }
 
-            public static int sx1 = 0;
-            public static int sy1 = 0;
-            public static int sx2 = 700;
-            public static int sy2 = 500;
-
-            private double x1 = -7, x2 = 5;
-            private double y1 = -5, y2 = 4;
-
-            public Vector()
-            {
-            }
-
-            public Vector(double x0, double y0, Color color)
-            {
-                this.x0 = x0;
-                this.y0 = y0;
-                this.color = color;
-            }
-
-            public void setX(double x)
-            {
-                this.x0 = x;
-            }
-            public void setY(double y)
-            {
-                this.y0 = y;
-            }
-
-            public double getX()
-            {
-                return x0;
-            }
-            public double getY()
-            {
-                return y0;
-            }
-
-            public void Encender(Bitmap canva)
-            {
-                int sX;
-                int sY;
-
-                Pantalla(x0, y0, out sX, out sY);
-
-                if (sX >= 0 && sX < 700 && sY >= 0 && sY < 500)
-                {
-                    canva.SetPixel(sX, sY, this.color);
-                }
-            }
-
-
-            public void Pantalla(double x, double y, out int sx, out int sy)
-            {
-                sx = (int)(((x - x1) / (x1 - x2)) * (sx1 - sx2)) + sx1;
-                sy = (int)(((y - y2) / (y2 - y1)) * (sy1 - sy2)) + sy1;
-            }
+        private void btnParabola_Click(object sender, EventArgs e)
+        {
+            Parabola objPara = new Parabola();
+            objPara.Encender(bmp);
+            pictureBox1.Image = bmp;
         }
 
 
-        internal class Segmento : Vector
-        {
-            public int xf;
-            public int yf;
-
-            public void Encender(Bitmap bmp)
-            {
-                double t = 0;
-                double dt = 0.001;
-
-                Vector obj = new Vector();
-
-                do
-                {
-                    obj.setX(x0 + (xf - x0) * t);
-                    obj.setY(y0 + (yf - y0) * t);
-                    obj.color = color;
-                    obj.Encender(bmp);
-                    t += dt;
-
-                } while (t <= 1);
-            }
-        }
-
-        internal class Circunferencia: Vector
-        {
-           
-            public double rd;
-            
-             public void Encender(Bitmap bmp)
-            {
-                double t = 0;
-                double dt = 0.001;
-
-                Vector obj = new Vector();
-
-                do
-                {
-                    obj.setX(x0 + rd * Math.Cos(t));
-                    obj.setY(y0 + rd * Math.Sin(t));
-                    obj.color = color;
-                    obj.Encender(bmp);
-                    t += dt;
-
-                } while (t <= 2* Math.PI);
-            }
-        }
 
 
     }
