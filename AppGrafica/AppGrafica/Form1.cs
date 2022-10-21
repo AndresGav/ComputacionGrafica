@@ -127,11 +127,13 @@ namespace AppGrafica
         private void button6_Click(object sender, EventArgs e)
         {
             Test obj = new Test();
+            obj.picture = pictureBox1;
             obj.x0 = 0;
             obj.y0 = 0;
             obj.color = Color.Red;
             obj.Encender(bmp);
-            pictureBox1.Image = bmp;
+            
+            //pictureBox1.Image = bmp;
         }
 
         private void btnParabola_Click(object sender, EventArgs e)

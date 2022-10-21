@@ -18,7 +18,10 @@ namespace AppGrafica
         public static int sy2 = 500;
 
         private double x1 = -7, x2 = 5;
-        private double y1 = -5, y2 = 4;
+       private double y1 = -5, y2 = 4;
+
+        //private double x1 = -70, x2 = 70;
+        //private double y1 = -50, y2 = 50;
 
         public Vector()
         {
