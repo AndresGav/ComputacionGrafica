@@ -136,6 +136,71 @@ namespace AppGrafica
             //pictureBox1.Image = bmp;
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Lazo objLazo = new Lazo();
+            objLazo.x0 = 0;
+            objLazo.y0 = 0;
+            objLazo.rd = 1;
+            objLazo.Encender(bmp);
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Margarita objMarga = new Margarita();
+            objMarga.x0 = 0;
+            objMarga.y0 = 0;
+            objMarga.rd = 1;
+            objMarga.Encender(bmp);
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Margarita objMarga = new Margarita();
+            objMarga.x0 = -1;
+            objMarga.y0 = 3;
+            objMarga.rd = 0.3;
+            objMarga.color = Color.Red;
+            objMarga.Encender(bmp);
+
+
+            objMarga.x0 = 2;
+            objMarga.y0 = 1;
+            objMarga.rd = 1.3;
+            objMarga.color = Color.Brown;
+            objMarga.Encender(bmp);
+
+            Lazo objLazo = new Lazo();
+            objLazo.x0 = -4;
+            objLazo.y0 = 1;
+            objLazo.rd = 1.3;
+            objLazo.color = Color.DarkBlue;
+            objLazo.Encender(bmp);
+
+            objLazo.x0 = -1;
+            objLazo.y0 = -3;
+            objLazo.rd = 0.6;
+            objLazo.color = Color.Red;
+            objLazo.Encender(bmp);
+
+            objLazo.x0 = -1;
+            objLazo.y0 = 1;
+            objLazo.rd = 2;
+            objLazo.color = Color.Green;
+            objLazo.Encender(bmp);
+            objMarga.x0 = -1;
+            objMarga.y0 = -1;
+            objMarga.rd = 2;
+            objMarga.color = Color.Purple;
+            objMarga.Encender(bmp);
+
+            pictureBox1.Image = bmp;
+        }
+
         private void btnParabola_Click(object sender, EventArgs e)
         {
             Parabola objPara = new Parabola();
