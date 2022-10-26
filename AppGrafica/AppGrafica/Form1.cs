@@ -153,6 +153,7 @@ namespace AppGrafica
             objMarga.x0 = 0;
             objMarga.y0 = 0;
             objMarga.rd = 1;
+            objMarga.color = Color.Red;
             objMarga.Encender(bmp);
 
             pictureBox1.Image = bmp;
@@ -198,7 +199,44 @@ namespace AppGrafica
             objMarga.color = Color.Purple;
             objMarga.Encender(bmp);
 
+            Circunferencia objCir = new Circunferencia();
+            objCir.rd = 1;
+            objCir.x0 = -1;
+            objCir.y0 = 1;
+            objCir.color = Color.DarkGreen;
+            objCir.Encender(bmp);
+
             pictureBox1.Image = bmp;
+        }
+
+        private void gFunciones_Click(object sender, EventArgs e)
+        {
+            gFunciones objFun = new gFunciones();
+            objFun.color = Color.DarkGreen;
+            objFun.Encender(bmp);
+
+            Segmento objSeg = new Segmento();
+           
+
+            objSeg.x0 = -7;
+            objSeg.y0 = 0;
+            objSeg.xf = 7;
+            objSeg.yf =0;
+            objSeg.color = Color.Black;
+            objSeg.Encender(bmp);
+
+
+            objSeg.x0 = 0;
+            objSeg.y0 = -5;
+            objSeg.xf = 0;
+            objSeg.yf = 5;
+            objSeg.color = Color.Black;
+            objSeg.Encender(bmp);
+
+
+
+            pictureBox1.Image = bmp;
+
         }
 
         private void btnParabola_Click(object sender, EventArgs e)

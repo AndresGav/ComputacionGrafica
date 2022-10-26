@@ -39,6 +39,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.gFunciones = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,7 +145,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(1003, 292);
+            this.button9.Location = new System.Drawing.Point(1003, 186);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(130, 23);
             this.button9.TabIndex = 16;
@@ -152,12 +153,23 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // gFunciones
+            // 
+            this.gFunciones.Location = new System.Drawing.Point(1003, 313);
+            this.gFunciones.Name = "gFunciones";
+            this.gFunciones.Size = new System.Drawing.Size(130, 23);
+            this.gFunciones.TabIndex = 17;
+            this.gFunciones.Text = "G FUNCIONES";
+            this.gFunciones.UseVisualStyleBackColor = true;
+            this.gFunciones.Click += new System.EventHandler(this.gFunciones_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1145, 561);
+            this.Controls.Add(this.gFunciones);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -189,5 +201,6 @@
         private Button button7;
         private Button button8;
         private Button button9;
+        private Button gFunciones;
     }
 }
