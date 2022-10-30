@@ -9,7 +9,17 @@ namespace AppGrafica
 
         //bitmap
         Bitmap bmp = new Bitmap(width, height);
-       
+
+        //objetos para dibujar
+        Segmento objSeg = new Segmento();
+        Circunferencia objCir = new Circunferencia();
+        Test obj = new Test();
+        Lazo objLazo = new Lazo();
+        Margarita objMarga = new Margarita();
+        gFunciones objFun = new gFunciones();
+        Parabola objPara = new Parabola();
+
+
 
         public Form1()
         {
@@ -67,7 +77,9 @@ namespace AppGrafica
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             pictureBox1.Image = null;
+            
         }
 
         private int lagrange(int x, int inicial, int final)
@@ -77,9 +89,7 @@ namespace AppGrafica
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Segmento objSeg = new Segmento();
-            Circunferencia objCir = new Circunferencia();
-           
+          
             objSeg.x0 = -5;
             objSeg.y0 = 3;
             objSeg.xf = 2;
@@ -126,19 +136,19 @@ namespace AppGrafica
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Test obj = new Test();
+            
             obj.picture = pictureBox1;
             obj.x0 = 0;
             obj.y0 = 0;
             obj.color = Color.Red;
             obj.Encender(bmp);
             
-            //pictureBox1.Image = bmp;
+            pictureBox1.Image = bmp;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Lazo objLazo = new Lazo();
+            
             objLazo.x0 = 0;
             objLazo.y0 = 0;
             objLazo.rd = 1;
@@ -149,7 +159,6 @@ namespace AppGrafica
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Margarita objMarga = new Margarita();
             objMarga.x0 = 0;
             objMarga.y0 = 0;
             objMarga.rd = 1;
@@ -161,7 +170,7 @@ namespace AppGrafica
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Margarita objMarga = new Margarita();
+            
             objMarga.x0 = -1;
             objMarga.y0 = 3;
             objMarga.rd = 0.3;
@@ -175,7 +184,7 @@ namespace AppGrafica
             objMarga.color = Color.Brown;
             objMarga.Encender(bmp);
 
-            Lazo objLazo = new Lazo();
+            
             objLazo.x0 = -4;
             objLazo.y0 = 1;
             objLazo.rd = 1.3;
@@ -199,7 +208,7 @@ namespace AppGrafica
             objMarga.color = Color.Purple;
             objMarga.Encender(bmp);
 
-            Circunferencia objCir = new Circunferencia();
+           
             objCir.rd = 1;
             objCir.x0 = -1;
             objCir.y0 = 1;
@@ -211,11 +220,11 @@ namespace AppGrafica
 
         private void gFunciones_Click(object sender, EventArgs e)
         {
-            gFunciones objFun = new gFunciones();
+            
             objFun.color = Color.DarkGreen;
             objFun.Encender(bmp);
 
-            Segmento objSeg = new Segmento();
+           
            
 
             objSeg.x0 = -7;
@@ -241,7 +250,7 @@ namespace AppGrafica
 
         private void btnParabola_Click(object sender, EventArgs e)
         {
-            Parabola objPara = new Parabola();
+            
             objPara.Encender(bmp);
             pictureBox1.Image = bmp;
         }

@@ -28,7 +28,7 @@ namespace AppGrafica
                 obj.color = Color.Green;
                 obj.Encender(bmp);
 
-                obj.setY(Math.Cos(t));
+                obj.setY(Math.Sin(t));
                 obj.color = Color.Blue;
                 obj.Encender(bmp);
 
