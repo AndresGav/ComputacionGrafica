@@ -40,6 +40,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.gFunciones = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,9 +57,9 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(1003, 12);
+            this.button1.Location = new System.Drawing.Point(1003, 14);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 23);
+            this.button1.Size = new System.Drawing.Size(130, 26);
             this.button1.TabIndex = 2;
             this.button1.Text = "ENCENDER PIXEL";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,9 +68,9 @@
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(1003, 70);
+            this.button4.Location = new System.Drawing.Point(1003, 79);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 23);
+            this.button4.Size = new System.Drawing.Size(130, 26);
             this.button4.TabIndex = 10;
             this.button4.Text = "DEGRADAR";
             this.button4.UseVisualStyleBackColor = true;
@@ -78,9 +79,9 @@
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(1003, 41);
+            this.button3.Location = new System.Drawing.Point(1003, 46);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(130, 23);
+            this.button3.Size = new System.Drawing.Size(130, 26);
             this.button3.TabIndex = 9;
             this.button3.Text = "PINTAR BANDERA";
             this.button3.UseVisualStyleBackColor = true;
@@ -89,9 +90,9 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(1003, 526);
+            this.button2.Location = new System.Drawing.Point(1003, 596);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 23);
+            this.button2.Size = new System.Drawing.Size(130, 26);
             this.button2.TabIndex = 8;
             this.button2.Text = "BORRAR";
             this.button2.UseVisualStyleBackColor = true;
@@ -100,9 +101,9 @@
             // button5
             // 
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Location = new System.Drawing.Point(1003, 427);
+            this.button5.Location = new System.Drawing.Point(1003, 484);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(130, 23);
+            this.button5.Size = new System.Drawing.Size(130, 26);
             this.button5.TabIndex = 11;
             this.button5.Text = "TEST";
             this.button5.UseVisualStyleBackColor = true;
@@ -111,9 +112,9 @@
             // btnParabola
             // 
             this.btnParabola.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnParabola.Location = new System.Drawing.Point(1003, 99);
+            this.btnParabola.Location = new System.Drawing.Point(1003, 112);
             this.btnParabola.Name = "btnParabola";
-            this.btnParabola.Size = new System.Drawing.Size(130, 23);
+            this.btnParabola.Size = new System.Drawing.Size(130, 26);
             this.btnParabola.TabIndex = 12;
             this.btnParabola.Text = "PARABOLA";
             this.btnParabola.UseVisualStyleBackColor = true;
@@ -122,9 +123,9 @@
             // button6
             // 
             this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.Location = new System.Drawing.Point(1003, 477);
+            this.button6.Location = new System.Drawing.Point(1003, 541);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(130, 23);
+            this.button6.Size = new System.Drawing.Size(130, 26);
             this.button6.TabIndex = 13;
             this.button6.Text = "ANIMAR";
             this.button6.UseVisualStyleBackColor = true;
@@ -133,9 +134,9 @@
             // button7
             // 
             this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.Location = new System.Drawing.Point(1003, 128);
+            this.button7.Location = new System.Drawing.Point(1003, 145);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(130, 23);
+            this.button7.Size = new System.Drawing.Size(130, 26);
             this.button7.TabIndex = 14;
             this.button7.Text = "LAZO";
             this.button7.UseVisualStyleBackColor = true;
@@ -144,9 +145,9 @@
             // button8
             // 
             this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.Location = new System.Drawing.Point(1003, 157);
+            this.button8.Location = new System.Drawing.Point(1003, 178);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(130, 23);
+            this.button8.Size = new System.Drawing.Size(130, 26);
             this.button8.TabIndex = 15;
             this.button8.Text = "MARGARITA";
             this.button8.UseVisualStyleBackColor = true;
@@ -155,9 +156,9 @@
             // button9
             // 
             this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.Location = new System.Drawing.Point(1003, 186);
+            this.button9.Location = new System.Drawing.Point(1003, 211);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(130, 23);
+            this.button9.Size = new System.Drawing.Size(130, 26);
             this.button9.TabIndex = 16;
             this.button9.Text = "TAREA";
             this.button9.UseVisualStyleBackColor = true;
@@ -166,20 +167,32 @@
             // gFunciones
             // 
             this.gFunciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gFunciones.Location = new System.Drawing.Point(1003, 313);
+            this.gFunciones.Location = new System.Drawing.Point(1003, 355);
             this.gFunciones.Name = "gFunciones";
-            this.gFunciones.Size = new System.Drawing.Size(130, 23);
+            this.gFunciones.Size = new System.Drawing.Size(130, 26);
             this.gFunciones.TabIndex = 17;
             this.gFunciones.Text = "G FUNCIONES";
             this.gFunciones.UseVisualStyleBackColor = true;
             this.gFunciones.Click += new System.EventHandler(this.gFunciones_Click);
             // 
+            // button10
+            // 
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10.Location = new System.Drawing.Point(867, 178);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(130, 26);
+            this.button10.TabIndex = 18;
+            this.button10.Text = "APAGAR";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1145, 561);
+            this.ClientSize = new System.Drawing.Size(1145, 636);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.gFunciones);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -213,5 +226,6 @@
         private Button button8;
         private Button button9;
         private Button gFunciones;
+        private Button button10;
     }
 }

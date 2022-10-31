@@ -33,11 +33,27 @@ namespace AppGrafica
             } while (t <= 1);
         }
 
-        static async void delayMethod()
+        public void Apagar(Bitmap bmp)
         {
-            await Task.Delay(3000);
+            double t = 0;
+            double dt = 0.001;
 
+            Vector obj = new Vector();
+
+            do
+            {
+
+                obj.setX(x0 + (xf - x0) * t);
+                obj.setY(y0 + (yf - y0) * t);
+                
+
+                obj.Apagar(bmp);
+
+                t += dt;
+
+            } while (t <= 1);
         }
+       
 
     }
 }

@@ -71,5 +71,18 @@ namespace AppGrafica
             sx = (int)(((x - x1) / (x1 - x2)) * (sx1 - sx2)) + sx1;
             sy = (int)(((y - y2) / (y2 - y1)) * (sy1 - sy2)) + sy1;
         }
+
+        public void Apagar(Bitmap canva)
+        {
+            int sX;
+            int sY;
+
+            Pantalla(x0, y0, out sX, out sY);
+
+            if (sX >= 0 && sX < 700 && sY >= 0 && sY < 500)
+            {
+                canva.SetPixel(sX, sY, Color.WhiteSmoke);
+            }
+        }
     }
 }

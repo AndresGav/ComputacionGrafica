@@ -77,9 +77,12 @@ namespace AppGrafica
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
+           
+
             pictureBox1.Image = null;
-            
+            bmp = new Bitmap(width, height);
+
         }
 
         private int lagrange(int x, int inicial, int final)
@@ -246,6 +249,12 @@ namespace AppGrafica
 
             pictureBox1.Image = bmp;
 
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            objSeg.Apagar(bmp);
+            pictureBox1.Image = bmp;
         }
 
         private void btnParabola_Click(object sender, EventArgs e)
