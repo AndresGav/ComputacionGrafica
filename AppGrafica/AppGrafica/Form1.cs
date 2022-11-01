@@ -28,6 +28,90 @@ namespace AppGrafica
 
         private void button1_Click(object sender, EventArgs e)
         {
+       
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+           
+
+            pictureBox1.Image = null;
+            bmp = new Bitmap(width, height);
+
+        }
+
+        private int lagrange(int x, int inicial, int final)
+        {
+            return ((inicial * (x - 700)) / -700) + ((final * x) / 700);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void gFunciones_Click(object sender, EventArgs e)
+        {
+            
+
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void encerderPixelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             bmp.SetPixel(100, 100, Color.FromArgb(44, 62, 80));
             bmp.SetPixel(100, 101, Color.FromArgb(44, 62, 80));
             bmp.SetPixel(101, 100, Color.FromArgb(44, 62, 80));
@@ -36,7 +120,7 @@ namespace AppGrafica
             pictureBox1.Image = bmp;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void normalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             for (int x = 0; x < 700; x++)
             {
@@ -53,7 +137,7 @@ namespace AppGrafica
             pictureBox1.Image = bmp;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void degradarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int red1 = 44, green1 = 62, blue1 = 80;
             int red2 = 133, green2 = 146, blue2 = 158;
@@ -75,24 +159,110 @@ namespace AppGrafica
             pictureBox1.Image = bmp;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void parabolaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-           
+            objPara.Encender(bmp);
+            pictureBox1.Image = bmp;
+        }
 
-            pictureBox1.Image = null;
-            bmp = new Bitmap(width, height);
+        private void lazoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            objLazo.x0 = 0;
+            objLazo.y0 = 0;
+            objLazo.rd = 1;
+            objLazo.color = Color.Red;
+            objLazo.Encender(bmp);
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void encenderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objMarga.x0 = 0;
+            objMarga.y0 = 0;
+            objMarga.rd = 1;
+            objMarga.color = Color.Red;
+            objMarga.Encender(bmp);
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void apagarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objSeg.Apagar(bmp);
+            pictureBox1.Image = bmp;
+        }
+
+        private void animacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            obj.picture = pictureBox1;
+            obj.x0 = 0;
+            obj.y0 = 0;
+            obj.color = Color.Red;
+            obj.Encender(bmp);
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void graficoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
 
         }
 
-        private int lagrange(int x, int inicial, int final)
+        private void graficosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            return ((inicial * (x - 700)) / -700) + ((final * x) / 700);
+            objMarga.x0 = -1;
+            objMarga.y0 = 3;
+            objMarga.rd = 0.3;
+            objMarga.color = Color.Red;
+            objMarga.Encender(bmp);
+
+
+            objMarga.x0 = 2;
+            objMarga.y0 = 1;
+            objMarga.rd = 1.3;
+            objMarga.color = Color.Brown;
+            objMarga.Encender(bmp);
+
+
+            objLazo.x0 = -4;
+            objLazo.y0 = 1;
+            objLazo.rd = 1.3;
+            objLazo.color = Color.DarkBlue;
+            objLazo.Encender(bmp);
+
+            objLazo.x0 = -1;
+            objLazo.y0 = -3;
+            objLazo.rd = 0.6;
+            objLazo.color = Color.Red;
+            objLazo.Encender(bmp);
+
+            objLazo.x0 = -1;
+            objLazo.y0 = 1;
+            objLazo.rd = 2;
+            objLazo.color = Color.Green;
+            objLazo.Encender(bmp);
+            objMarga.x0 = -1;
+            objMarga.y0 = -1;
+            objMarga.rd = 2;
+            objMarga.color = Color.Purple;
+            objMarga.Encender(bmp);
+
+
+            objCir.rd = 1;
+            objCir.x0 = -1;
+            objCir.y0 = 1;
+            objCir.color = Color.DarkGreen;
+            objCir.Encender(bmp);
+
+            pictureBox1.Image = bmp;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void graficoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-          
             objSeg.x0 = -5;
             objSeg.y0 = 3;
             objSeg.xf = 2;
@@ -110,7 +280,7 @@ namespace AppGrafica
 
             objSeg.x0 = -3;
             objSeg.y0 = -3;
-            objSeg.xf = -3 ;
+            objSeg.xf = -3;
             objSeg.yf = 3;
             objSeg.color = Color.Blue;
             objSeg.Encender(bmp);
@@ -137,103 +307,18 @@ namespace AppGrafica
             pictureBox1.Image = bmp;
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void gFuncionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-            obj.picture = pictureBox1;
-            obj.x0 = 0;
-            obj.y0 = 0;
-            obj.color = Color.Red;
-            obj.Encender(bmp);
-            
-            pictureBox1.Image = bmp;
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            
-            objLazo.x0 = 0;
-            objLazo.y0 = 0;
-            objLazo.rd = 1;
-            objLazo.Encender(bmp);
-
-            pictureBox1.Image = bmp;
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            objMarga.x0 = 0;
-            objMarga.y0 = 0;
-            objMarga.rd = 1;
-            objMarga.color = Color.Red;
-            objMarga.Encender(bmp);
-
-            pictureBox1.Image = bmp;
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            
-            objMarga.x0 = -1;
-            objMarga.y0 = 3;
-            objMarga.rd = 0.3;
-            objMarga.color = Color.Red;
-            objMarga.Encender(bmp);
-
-
-            objMarga.x0 = 2;
-            objMarga.y0 = 1;
-            objMarga.rd = 1.3;
-            objMarga.color = Color.Brown;
-            objMarga.Encender(bmp);
-
-            
-            objLazo.x0 = -4;
-            objLazo.y0 = 1;
-            objLazo.rd = 1.3;
-            objLazo.color = Color.DarkBlue;
-            objLazo.Encender(bmp);
-
-            objLazo.x0 = -1;
-            objLazo.y0 = -3;
-            objLazo.rd = 0.6;
-            objLazo.color = Color.Red;
-            objLazo.Encender(bmp);
-
-            objLazo.x0 = -1;
-            objLazo.y0 = 1;
-            objLazo.rd = 2;
-            objLazo.color = Color.Green;
-            objLazo.Encender(bmp);
-            objMarga.x0 = -1;
-            objMarga.y0 = -1;
-            objMarga.rd = 2;
-            objMarga.color = Color.Purple;
-            objMarga.Encender(bmp);
-
-           
-            objCir.rd = 1;
-            objCir.x0 = -1;
-            objCir.y0 = 1;
-            objCir.color = Color.DarkGreen;
-            objCir.Encender(bmp);
-
-            pictureBox1.Image = bmp;
-        }
-
-        private void gFunciones_Click(object sender, EventArgs e)
-        {
-            
             objFun.color = Color.DarkGreen;
             objFun.Encender(bmp);
 
-           
-           
+
+
 
             objSeg.x0 = -7;
             objSeg.y0 = 0;
             objSeg.xf = 7;
-            objSeg.yf =0;
+            objSeg.yf = 0;
             objSeg.color = Color.Black;
             objSeg.Encender(bmp);
 
@@ -248,20 +333,11 @@ namespace AppGrafica
 
 
             pictureBox1.Image = bmp;
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            objSeg.Apagar(bmp);
-            pictureBox1.Image = bmp;
         }
 
         private void btnParabola_Click(object sender, EventArgs e)
         {
-            
-            objPara.Encender(bmp);
-            pictureBox1.Image = bmp;
+
         }
 
 
