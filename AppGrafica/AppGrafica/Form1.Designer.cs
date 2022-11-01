@@ -66,9 +66,9 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(1003, 503);
+            this.button2.Location = new System.Drawing.Point(710, 425);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 26);
+            this.button2.Size = new System.Drawing.Size(100, 100);
             this.button2.TabIndex = 8;
             this.button2.Text = "LIMPIAR ";
             this.button2.UseVisualStyleBackColor = true;
@@ -82,7 +82,7 @@
             this.parcialIIIToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1145, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(822, 25);
             this.menuStrip1.TabIndex = 19;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -182,11 +182,12 @@
             this.testsToolStripMenuItem.Name = "testsToolStripMenuItem";
             this.testsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.testsToolStripMenuItem.Text = "Tests";
+            this.testsToolStripMenuItem.Click += new System.EventHandler(this.testsToolStripMenuItem_Click);
             // 
             // animacionToolStripMenuItem
             // 
             this.animacionToolStripMenuItem.Name = "animacionToolStripMenuItem";
-            this.animacionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.animacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.animacionToolStripMenuItem.Text = "Animacion";
             this.animacionToolStripMenuItem.Click += new System.EventHandler(this.animacionToolStripMenuItem_Click);
             // 
@@ -230,12 +231,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1145, 541);
+            this.ClientSize = new System.Drawing.Size(822, 541);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ANDRES GAVINO";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);

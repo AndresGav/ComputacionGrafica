@@ -6,8 +6,6 @@ namespace AppGrafica
     public partial class Form1 : Form
     {
         public static int width = 700, height = 500;
-
-        //bitmap
         Bitmap bmp = new Bitmap(width, height);
 
         //objetos para dibujar
@@ -43,8 +41,6 @@ namespace AppGrafica
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-           
 
             pictureBox1.Image = null;
             bmp = new Bitmap(width, height);
@@ -191,8 +187,14 @@ namespace AppGrafica
 
         private void apagarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            objSeg.Apagar(bmp);
+            objMarga.Apagar(bmp);
             pictureBox1.Image = bmp;
+
+            objLazo.x0 = -4;
+            objLazo.y0 = 1;
+            objLazo.rd = 1.3;
+            objLazo.color = Color.DarkBlue;
+            objLazo.Encender(bmp);
         }
 
         private void animacionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -333,6 +335,11 @@ namespace AppGrafica
 
 
             pictureBox1.Image = bmp;
+        }
+
+        private void testsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnParabola_Click(object sender, EventArgs e)
