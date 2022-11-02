@@ -47,11 +47,13 @@ namespace AppGrafica
 
         }
 
-        private int lagrange(int x, int inicial, int final)
+        private int lagrange(int x, int inicial, int final, int xinicial, int xfinal )
         {
+
             return ((inicial * (x - 700)) / -700) + ((final * x) / 700);
         }
 
+ 
         private void button5_Click(object sender, EventArgs e)
         {
 
@@ -141,9 +143,9 @@ namespace AppGrafica
 
             for (int x = 0; x < 700; x++)
             {
-                red = (int)lagrange(x, red1, red2);
-                green = (int)lagrange(x, green1, green2);
-                blue = (int)lagrange(x, blue1, blue2);
+                red = (int)lagrange(x, red1, red2,0,0);
+                green = (int)lagrange(x, green1, green2,0,0);
+                blue = (int)lagrange(x, blue1, blue2,0,0);
 
                 for (int y = 0; y < 500; y++)
                 {
@@ -373,9 +375,106 @@ namespace AppGrafica
 
         }
 
-        private void examenToolStripMenuItem_Click(object sender, EventArgs e)
+        async private void examenToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            /*Circunferencia c = new Circunferencia();
+            c.x0 = 0;
+            c.y0 = 0;
+            c.rd = 3;
+            c.color = Color.Red;
+            c.Encender(bmp);
+            pictureBox1.Image = bmp;
+            Circunferencia c2 = new Circunferencia();
+            c2.x0 = 0;
+            c2.y0 = 0;
+            c2.rd = 5;
+            c2.color = Color.Blue;
+            c2.Encender(bmp);
+            pictureBox1.Image = bmp;
+            Circunferencia c3 = new Circunferencia();
+            c3.rd = 0.4;
+            c3.color = Color.Orange;
 
+            // animacion
+            double t = 0.05;
+            double r = 4;
+
+            do
+            {
+                c3.x0 = 0 + r * (double)Math.Cos(t);
+                c3.y0 = 0 + r * (double)Math.Sin(t);
+                
+                c3.Encender(bmp);
+                pictureBox1.Image = bmp;
+
+                // esperar
+                await Task.Delay(100);
+
+                // apagar
+                c3.Apagar(bmp);
+                pictureBox1.Image = bmp;
+
+                t += 0.1;
+
+            } while (t <= Math.PI * 2);
+            */
+            int red1 = 44, green1 = 62, blue1 = 80;
+            int red2 = 255, green2 = 255, blue2 = 255;
+            int red, green, blue;
+
+            for (int x = 0; x < 1; x++)
+            {
+                red = (int)lagrange(x, red1, red2,0,0);
+                green = (int)lagrange(x, green1, green2,0,0);
+                blue = (int)lagrange(x, blue1, blue2,0,0);
+
+                for (int y = 0; y < 500; y++)
+                {
+                    bmp.SetPixel(x, y, Color.FromArgb(red, green, blue));
+                }
+
+            }
+
+            red1 = 255; green1 = 255; blue1 = 255;
+            red2 = 44; green2 = 62; blue2 = 80;
+
+
+            for (int x = 350; x <700; x++)
+            {
+                red = (int)lagrange(x, red1, red2,0,0);
+                green = (int)lagrange(x, green1, green2,0,0);
+                blue = (int)lagrange(x, blue1, blue2,0,0);
+
+                for (int y = 0; y < 500; y++)
+                {
+                    bmp.SetPixel(x, y, Color.FromArgb(red, green, blue));
+                }
+
+            }
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void planoCartesianoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objSeg.x0 = -7;
+            objSeg.y0 = 0;
+            objSeg.xf = 7;
+            objSeg.yf = 0;
+            objSeg.color = Color.Black;
+            objSeg.Encender(bmp);
+
+
+            objSeg.x0 = 0;
+            objSeg.y0 = -5;
+            objSeg.xf = 0;
+            objSeg.yf = 5;
+            objSeg.color = Color.Black;
+            objSeg.Encender(bmp);
+
+
+
+            pictureBox1.Image = bmp;
         }
 
         private void btnParabola_Click(object sender, EventArgs e)

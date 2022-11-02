@@ -40,7 +40,7 @@ namespace AppGrafica
             {
                 obj.setX(x0 + rd * Math.Cos(t));
                 obj.setY(y0 + rd * Math.Sin(t));
-                obj.color = color;
+    
                 obj.Encender(bmp);
                 t += dt;
 
