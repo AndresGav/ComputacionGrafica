@@ -49,6 +49,8 @@
             this.graficoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.parcial2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parcialIIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.examenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -96,7 +98,8 @@
             this.margaritaToolStripMenuItem,
             this.gFuncionesToolStripMenuItem,
             this.testsToolStripMenuItem,
-            this.deberesToolStripMenuItem});
+            this.deberesToolStripMenuItem,
+            this.examenToolStripMenuItem});
             this.parcial1ToolStripMenuItem.Name = "parcial1ToolStripMenuItem";
             this.parcial1ToolStripMenuItem.Size = new System.Drawing.Size(65, 21);
             this.parcial1ToolStripMenuItem.Text = "Parcial I";
@@ -187,7 +190,7 @@
             // animacionToolStripMenuItem
             // 
             this.animacionToolStripMenuItem.Name = "animacionToolStripMenuItem";
-            this.animacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.animacionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.animacionToolStripMenuItem.Text = "Animacion";
             this.animacionToolStripMenuItem.Click += new System.EventHandler(this.animacionToolStripMenuItem_Click);
             // 
@@ -226,19 +229,37 @@
             this.parcialIIIToolStripMenuItem.Size = new System.Drawing.Size(71, 21);
             this.parcialIIIToolStripMenuItem.Text = "Parcial III";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(710, 319);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 100);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Test";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // examenToolStripMenuItem
+            // 
+            this.examenToolStripMenuItem.Name = "examenToolStripMenuItem";
+            this.examenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.examenToolStripMenuItem.Text = "Examen";
+            this.examenToolStripMenuItem.Click += new System.EventHandler(this.examenToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(822, 541);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ANDRES GAVINO";
+            this.Text = "Andres Gavino";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -270,5 +291,7 @@
         private ToolStripMenuItem deberesToolStripMenuItem;
         private ToolStripMenuItem graficosToolStripMenuItem;
         private ToolStripMenuItem graficoToolStripMenuItem1;
+        private Button button1;
+        private ToolStripMenuItem examenToolStripMenuItem;
     }
 }

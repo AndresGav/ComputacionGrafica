@@ -176,6 +176,12 @@ namespace AppGrafica
 
         private void encenderToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            objLazo.x0 = -4;
+            objLazo.y0 = 1;
+            objLazo.rd = 1.3;
+            objLazo.color = Color.DarkBlue;
+            objLazo.Encender(bmp);
+
             objMarga.x0 = 0;
             objMarga.y0 = 0;
             objMarga.rd = 1;
@@ -187,14 +193,10 @@ namespace AppGrafica
 
         private void apagarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            objMarga.Apagar(bmp);
+            objLazo.Apagar(bmp);
             pictureBox1.Image = bmp;
 
-            objLazo.x0 = -4;
-            objLazo.y0 = 1;
-            objLazo.rd = 1.3;
-            objLazo.color = Color.DarkBlue;
-            objLazo.Encender(bmp);
+            
         }
 
         private void animacionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -338,6 +340,40 @@ namespace AppGrafica
         }
 
         private void testsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        async private void button1_Click_1(object sender, EventArgs e)
+        {
+            float x = -5;
+            objLazo.rd = 0.8;
+            objLazo.color = Color.DarkBlue;
+            objLazo.y0 = 0;
+
+            do
+            {
+                objLazo.x0 = x;
+                objLazo.y0 = -Math.Sin(objLazo.x0);
+
+                objLazo.Encender(bmp);
+                pictureBox1.Image = bmp;
+
+                await Task.Delay(100);
+
+                objLazo.Apagar(bmp);
+                pictureBox1.Image = bmp;
+
+
+                x += 0.2f;
+
+            } while (x < 5);
+
+            pictureBox1.Image = bmp;
+
+        }
+
+        private void examenToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

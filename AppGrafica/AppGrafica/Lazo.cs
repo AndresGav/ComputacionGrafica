@@ -26,5 +26,24 @@ namespace AppGrafica
 
             } while (t <= 2*Math.PI);
         }
+
+        public void Apagar(Bitmap bmp)
+        {
+
+            float t = 0;
+            float dt = 0.001f;
+
+            Vector obj = new Vector();
+
+            do
+            {
+                obj.setX(x0 + rd * Math.Sin(2 * t));
+                obj.setY(y0 + rd * Math.Cos(3 * t));
+               
+                obj.Encender(bmp);
+                t += dt;
+
+            } while (t <= 2 * Math.PI);
+        }
     }
 }
