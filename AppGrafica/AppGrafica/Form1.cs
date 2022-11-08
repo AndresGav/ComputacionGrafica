@@ -477,6 +477,57 @@ namespace AppGrafica
             pictureBox1.Image = bmp;
         }
 
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+        
+            double red, green, blue;
+
+            for (int x = 0; x < 350; x++)
+            {
+                red = ((0.4428 * x) + 100);
+                green = ((0.4428 * x) + 100);
+                blue = ((0.3 * x) + 150);
+
+                for (int y = 0; y < 500; y++)
+                {
+                    bmp.SetPixel(x, y, Color.FromArgb((int)red, (int)green, (int)blue));
+                }
+
+            }
+
+            for (int x = 350; x < 700; x++)
+            {
+                red = ((-0.4428 * x) + 410);
+                green = ((-0.4428 * x) + 410);
+                blue = ((-0.3 * x) + 360);
+
+                for (int y = 0; y < 500; y++)
+                {
+                    bmp.SetPixel(x, y, Color.FromArgb((int)red, (int)green, (int)blue));
+                }
+
+            }
+
+
+
+            /*for (int x = 350; x < 700; x++)
+            {
+                red = (int)-0.44 * x + 410;
+                green = (int)-0.44 * x + 410;
+                blue = (int)-0.33 * x + 360;
+
+                for (int y = 0; y < 500; y++)
+                {
+                    bmp.SetPixel(x, y, Color.FromArgb(red, green, blue));
+                }
+
+            }*/
+
+
+
+            pictureBox1.Image = bmp;
+        }
+
         private void btnParabola_Click(object sender, EventArgs e)
         {
 
