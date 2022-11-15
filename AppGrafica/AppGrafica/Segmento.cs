@@ -24,6 +24,7 @@ namespace AppGrafica
 
                 obj.setX(x0 + (xf - x0) * t);
                 obj.setY(y0 + (yf - y0) * t);
+                //vertor.setZ = z0 + (zf - z0) * t;
                 obj.color = color;
                 
                 obj.Encender(bmp);

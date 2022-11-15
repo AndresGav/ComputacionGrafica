@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using System.Security.Cryptography.Xml;
 using System.Windows.Forms;
 
@@ -522,6 +523,153 @@ namespace AppGrafica
                 }
 
             }*/
+
+
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void axonometriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Vector3D obj3D = new Vector3D();
+
+            obj3D.x0 = 0;
+            obj3D.y0 = 0;
+            obj3D.z0 = 0;
+            obj3D.color = Color.Red;
+            double t = 0;
+
+            do
+            {
+                obj3D.setX(t-5 +Math.Sin(t));
+                obj3D.setY( Math.Cos(t)-t+10);
+                obj3D.setZ(2);
+
+                obj3D.Encender(bmp);
+
+                t += 0.002;
+
+            } while (t <= 100);
+
+
+            
+            /*obj3D.color = Color.Purple;
+            t = 0;
+
+            do
+            {
+                obj3D.setX(.5 * Math.Sin(t));
+                obj3D.setY( 3+  Math.Cos(t*2));
+                obj3D.setZ((t / 30) );
+
+                obj3D.Encender(bmp);
+
+                t += 0.002;
+
+            } while (t <= 200);
+
+        
+            obj3D.color = Color.Black;
+            t = 1;
+
+            do
+            {
+                obj3D.setX(Math.Sin(t+3));
+                obj3D.setY(1-Math.Cos(t));
+                obj3D.setZ(t);
+
+                obj3D.Encender(bmp);
+
+                t += 0.002;
+
+            } while (t <= 100);
+            */
+
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void segmento3DToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Segmento3D obj = new Segmento3D();
+            obj.color = Color.Red;
+
+            //EJE X
+            obj.x0 = 0; obj.xf = 0;
+            obj.y0 = 0; obj.yf = 0;
+            obj.z0 = 0; obj.zf = 4;
+            obj.Encender(bmp);
+
+            //EJE Y
+            obj.x0 = 0; obj.xf = 8;
+            obj.y0 = 0; obj.yf = 0;
+            obj.z0 = 0; obj.zf = 0;
+            obj.Encender(bmp);
+
+            //EJE Z
+            obj.x0 = 0; obj.xf = 0;
+            obj.y0 = 0; obj.yf = 5;
+            obj.z0 = 0; obj.zf = 0;
+            obj.Encender(bmp);
+
+            obj.color = Color.LightGray;
+            //EJE 4
+            obj.x0 = 0; obj.xf = 0;
+            obj.y0 = 0; obj.yf = 5;
+            obj.z0 = 4; obj.zf = 4;
+            obj.Encender(bmp);
+
+            //EJE 5
+            obj.x0 = 0; obj.xf = 0;
+            obj.y0 = 5; obj.yf = 5;
+            obj.z0 = 0; obj.zf = 4;
+            obj.Encender(bmp);
+
+
+            //EJE 6
+            obj.x0 = 0; obj.xf = 8;
+            obj.y0 = 5; obj.yf = 5;
+            obj.z0 = 0; obj.zf = 0;
+            obj.Encender(bmp);
+
+            //EJE 7
+            obj.x0 = 8; obj.xf = 8;
+            obj.y0 = 0; obj.yf = 5;
+            obj.z0 = 0; obj.zf = 0;
+            obj.Encender(bmp);
+
+            //EJE 8
+            obj.x0 = 8; obj.xf = 8;
+            obj.y0 = 0; obj.yf = 0;
+            obj.z0 = 0; obj.zf = 4;
+            obj.Encender(bmp);
+
+            //EJE 9
+            obj.x0 = 0; obj.xf = 8;
+            obj.y0 = 0; obj.yf = 0;
+            obj.z0 = 4; obj.zf = 4;
+            obj.Encender(bmp);
+
+
+            //EJE 10
+            obj.x0 = 8; obj.xf = 8;
+            obj.y0 = 5; obj.yf = 5;
+            obj.z0 = 0; obj.zf = 4;
+            obj.Encender(bmp);
+
+
+            //EJE 11
+            obj.x0 = 0; obj.xf = 8;
+            obj.y0 = 5; obj.yf = 5;
+            obj.z0 = 4; obj.zf = 4;
+            obj.Encender(bmp);
+
+            //EJE 12
+            obj.x0 = 8; obj.xf = 8;
+            obj.y0 = 0; obj.yf = 5;
+            obj.z0 = 4; obj.zf = 4;
+            obj.Encender(bmp);
+
 
 
 
