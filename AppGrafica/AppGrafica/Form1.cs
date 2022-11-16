@@ -18,6 +18,9 @@ namespace AppGrafica
         gFunciones objFun = new gFunciones();
         Parabola objPara = new Parabola();
 
+        //OBJETOS 3D
+        SuperficieV objSuV = new SuperficieV();
+
 
 
         public Form1()
@@ -349,30 +352,7 @@ namespace AppGrafica
 
         async private void button1_Click_1(object sender, EventArgs e)
         {
-            float x = -5;
-            objLazo.rd = 0.8;
-            objLazo.color = Color.DarkBlue;
-            objLazo.y0 = 0;
 
-            do
-            {
-                objLazo.x0 = x;
-                objLazo.y0 = -Math.Sin(objLazo.x0);
-
-                objLazo.Encender(bmp);
-                pictureBox1.Image = bmp;
-
-                await Task.Delay(100);
-
-                objLazo.Apagar(bmp);
-                pictureBox1.Image = bmp;
-
-
-                x += 0.2f;
-
-            } while (x < 5);
-
-            pictureBox1.Image = bmp;
 
         }
 
@@ -655,30 +635,28 @@ namespace AppGrafica
 
         private void tipo1ToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            SuperficieV obj = new SuperficieV();
-            obj.color = Color.Blue;
-            obj.tipo = 1;
-            obj.rd = 1;
-            obj.x0 = 2;
-            obj.y0 = 2;
-            obj.z0 = -2;
 
-            obj.Encender(bmp, Color.Blue);
+            objSuV.tipo = 1;
+            objSuV.rd = 0.5f;
+            objSuV.setX( 1);
+            objSuV.setY( 4);
+            objSuV.setZ(0);
+
+            objSuV.Encender(bmp, Color.Blue);
 
             pictureBox1.Image = bmp;
         }
 
         private void tipo2ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            SuperficieV obj = new SuperficieV();
 
-            obj.tipo = 2;
-            obj.rd = 1;
-            obj.x0 = 100;
-            obj.y0 = 0;
-            obj.z0 = -10;
+            objSuV.tipo = 2;
+            objSuV.rd = 1.5f;
+            objSuV.setX(1);
+            objSuV.setY(4);
+            objSuV.setZ(0);
 
-            obj.Encender(bmp, Color.Red);
+            objSuV.Encender(bmp, Color.Red);
 
             pictureBox1.Image = bmp;
         }
@@ -741,6 +719,34 @@ namespace AppGrafica
             obj.Fv = 0.10f;
 
             obj.Encender(bmp, Color.Black);
+
+            pictureBox1.Image = bmp;
+        }
+
+       async private void animacionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            float x = -5;
+            objLazo.rd = 0.8;
+            objLazo.color = Color.DarkBlue;
+            objLazo.y0 = 0;
+
+            do
+            {
+                objLazo.x0 = x;
+                objLazo.y0 = -Math.Sin(objLazo.x0);
+
+                objLazo.Encender(bmp);
+                pictureBox1.Image = bmp;
+
+                await Task.Delay(100);
+
+                objLazo.Apagar(bmp);
+                pictureBox1.Image = bmp;
+
+
+                x += 0.2f;
+
+            } while (x < 5);
 
             pictureBox1.Image = bmp;
         }

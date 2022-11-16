@@ -9,7 +9,7 @@ namespace AppGrafica
     internal class SuperficieV:Vector3D
     {
         public int tipo;
-        public int rd;
+        public float rd;
 
         public void Encender(Bitmap canva, Color color)
         {
@@ -39,7 +39,7 @@ namespace AppGrafica
                     v3d.setZ ( z0 + h);
                     v3d.Encender(canva);
                     h += dh;
-                } while (h <= 3);
+                } while (h <= 2);
                 t += dt;
             }while (t <= 2*Math.PI);
         }
@@ -47,10 +47,12 @@ namespace AppGrafica
         public void Caso2(Bitmap canva, Color color)
         {
             Vector3D v3d = new Vector3D();
+
             float t = -3.1416f/2f;
             float dt = 0.2f;
 
             v3d.color = color;
+
 
             do
             {
@@ -58,11 +60,15 @@ namespace AppGrafica
 
                 do
                 {
-                    v3d.setX( rd * Math.Cos(t) * Math.Cos(h));
-                    v3d.setY(rd * Math.Cos(t) * Math.Sin(h));
-                    v3d.setZ(rd * Math.Sin(t));
+
+                    v3d.setX(x0 + rd * Math.Cos(t) * Math.Cos(h));
+                    v3d.setY(y0 + rd * Math.Cos(t) * Math.Sin(h));
+                    v3d.setZ(z0 + rd * Math.Sin(t));
+
+
                     v3d.Encender(canva);
                     h += dh;
+
                 } while (h <= 2 * Math.PI);
 
                 t += dt;
