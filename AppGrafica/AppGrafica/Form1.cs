@@ -481,52 +481,7 @@ namespace AppGrafica
         private void button3_Click_1(object sender, EventArgs e)
         {
         
-            double red, green, blue;
-
-            for (int x = 0; x < 350; x++)
-            {
-                red = ((0.4428 * x) + 100);
-                green = ((0.4428 * x) + 100);
-                blue = ((0.3 * x) + 150);
-
-                for (int y = 0; y < 500; y++)
-                {
-                    bmp.SetPixel(x, y, Color.FromArgb((int)red, (int)green, (int)blue));
-                }
-
-            }
-
-            for (int x = 350; x < 700; x++)
-            {
-                red = ((-0.4428 * x) + 410);
-                green = ((-0.4428 * x) + 410);
-                blue = ((-0.3 * x) + 360);
-
-                for (int y = 0; y < 500; y++)
-                {
-                    bmp.SetPixel(x, y, Color.FromArgb((int)red, (int)green, (int)blue));
-                }
-
-            }
-
-
-
-            /*for (int x = 350; x < 700; x++)
-            {
-                red = (int)-0.44 * x + 410;
-                green = (int)-0.44 * x + 410;
-                blue = (int)-0.33 * x + 360;
-
-                for (int y = 0; y < 500; y++)
-                {
-                    bmp.SetPixel(x, y, Color.FromArgb(red, green, blue));
-                }
-
-            }*/
-
-
-
-            pictureBox1.Image = bmp;
+           
         }
 
         private void axonometriaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -644,34 +599,148 @@ namespace AppGrafica
             obj.z0 = 0; obj.zf = 4;
             obj.Encender(bmp);
 
-            //EJE 9
-            obj.x0 = 0; obj.xf = 8;
-            obj.y0 = 0; obj.yf = 0;
-            obj.z0 = 4; obj.zf = 4;
-            obj.Encender(bmp);
+             //EJE 9
+             obj.x0 = 0; obj.xf = 8;
+             obj.y0 = 0; obj.yf = 0;
+             obj.z0 = 4; obj.zf = 4;
+             obj.Encender(bmp);
 
 
-            //EJE 10
-            obj.x0 = 8; obj.xf = 8;
-            obj.y0 = 5; obj.yf = 5;
-            obj.z0 = 0; obj.zf = 4;
-            obj.Encender(bmp);
+            /* //EJE 10
+             obj.x0 = 8; obj.xf = 8;
+             obj.y0 = 5; obj.yf = 5;
+             obj.z0 = 0; obj.zf = 4;
+             obj.Encender(bmp);
 
 
-            //EJE 11
-            obj.x0 = 0; obj.xf = 8;
-            obj.y0 = 5; obj.yf = 5;
-            obj.z0 = 4; obj.zf = 4;
-            obj.Encender(bmp);
+             //EJE 11
+             obj.x0 = 0; obj.xf = 8;
+             obj.y0 = 5; obj.yf = 5;
+             obj.z0 = 4; obj.zf = 4;
+             obj.Encender(bmp);
 
-            //EJE 12
-            obj.x0 = 8; obj.xf = 8;
-            obj.y0 = 0; obj.yf = 5;
-            obj.z0 = 4; obj.zf = 4;
-            obj.Encender(bmp);
+             //EJE 12
+             obj.x0 = 8; obj.xf = 8;
+             obj.y0 = 0; obj.yf = 5;
+             obj.z0 = 4; obj.zf = 4;
+             obj.Encender(bmp);*/
 
 
 
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void tipo1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void tipo2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void tipo1ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            SuperficieR obj = new SuperficieR();
+            obj.tipo = 1;
+            obj.Fv = 0.15f;
+            
+            obj.Encender(bmp, Color.Black);
+
+            pictureBox1.Image = bmp;
+
+        }
+
+        private void tipo1ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            SuperficieV obj = new SuperficieV();
+            obj.color = Color.Blue;
+            obj.tipo = 1;
+            obj.rd = 1;
+            obj.x0 = 2;
+            obj.y0 = 2;
+            obj.z0 = -2;
+
+            obj.Encender(bmp, Color.Blue);
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void tipo2ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            SuperficieV obj = new SuperficieV();
+
+            obj.tipo = 2;
+            obj.rd = 1;
+            obj.x0 = 100;
+            obj.y0 = 0;
+            obj.z0 = -10;
+
+            obj.Encender(bmp, Color.Red);
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void correcionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            double red, green, blue;
+
+            for (int x = 0; x < 350; x++)
+            {
+                red = ((0.4428 * x) + 100);
+                green = ((0.4428 * x) + 100);
+                blue = ((0.3 * x) + 150);
+
+                for (int y = 0; y < 500; y++)
+                {
+                    bmp.SetPixel(x, y, Color.FromArgb((int)red, (int)green, (int)blue));
+                }
+
+            }
+
+            for (int x = 350; x < 700; x++)
+            {
+                red = ((-0.4428 * x) + 410);
+                green = ((-0.4428 * x) + 410);
+                blue = ((-0.3 * x) + 360);
+
+                for (int y = 0; y < 500; y++)
+                {
+                    bmp.SetPixel(x, y, Color.FromArgb((int)red, (int)green, (int)blue));
+                }
+
+            }
+
+
+
+            /*for (int x = 350; x < 700; x++)
+            {
+                red = (int)-0.44 * x + 410;
+                green = (int)-0.44 * x + 410;
+                blue = (int)-0.33 * x + 360;
+
+                for (int y = 0; y < 500; y++)
+                {
+                    bmp.SetPixel(x, y, Color.FromArgb(red, green, blue));
+                }
+
+            }*/
+
+
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void tipo2ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            //PARABOLOIDE HIPERBOLICO
+            SuperficieR obj = new SuperficieR();
+            obj.tipo = 2;
+            obj.Fv = 0.10f;
+
+            obj.Encender(bmp, Color.Black);
 
             pictureBox1.Image = bmp;
         }

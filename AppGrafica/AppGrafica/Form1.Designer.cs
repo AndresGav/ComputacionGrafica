@@ -48,13 +48,19 @@
             this.graficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graficoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.examenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.correcionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planoCartesianoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parcial2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.axonometriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.segmento3DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.superficieVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo1ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo2ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.superficieRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.parcialIIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.segmento3DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -224,10 +230,19 @@
             // 
             // examenToolStripMenuItem
             // 
+            this.examenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.correcionToolStripMenuItem});
             this.examenToolStripMenuItem.Name = "examenToolStripMenuItem";
             this.examenToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.examenToolStripMenuItem.Text = "Examen";
             this.examenToolStripMenuItem.Click += new System.EventHandler(this.examenToolStripMenuItem_Click);
+            // 
+            // correcionToolStripMenuItem
+            // 
+            this.correcionToolStripMenuItem.Name = "correcionToolStripMenuItem";
+            this.correcionToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.correcionToolStripMenuItem.Text = "Correcion";
+            this.correcionToolStripMenuItem.Click += new System.EventHandler(this.correcionToolStripMenuItem_Click);
             // 
             // planoCartesianoToolStripMenuItem
             // 
@@ -240,7 +255,9 @@
             // 
             this.parcial2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.axonometriaToolStripMenuItem,
-            this.segmento3DToolStripMenuItem});
+            this.segmento3DToolStripMenuItem,
+            this.superficieVToolStripMenuItem,
+            this.superficieRToolStripMenuItem});
             this.parcial2ToolStripMenuItem.Name = "parcial2ToolStripMenuItem";
             this.parcial2ToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.parcial2ToolStripMenuItem.Text = "Parcial II";
@@ -251,6 +268,52 @@
             this.axonometriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.axonometriaToolStripMenuItem.Text = "Axonometria";
             this.axonometriaToolStripMenuItem.Click += new System.EventHandler(this.axonometriaToolStripMenuItem_Click);
+            // 
+            // segmento3DToolStripMenuItem
+            // 
+            this.segmento3DToolStripMenuItem.Name = "segmento3DToolStripMenuItem";
+            this.segmento3DToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.segmento3DToolStripMenuItem.Text = "Segmento 3D";
+            this.segmento3DToolStripMenuItem.Click += new System.EventHandler(this.segmento3DToolStripMenuItem_Click);
+            // 
+            // superficieVToolStripMenuItem
+            // 
+            this.superficieVToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tipo1ToolStripMenuItem2,
+            this.tipo2ToolStripMenuItem1});
+            this.superficieVToolStripMenuItem.Name = "superficieVToolStripMenuItem";
+            this.superficieVToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.superficieVToolStripMenuItem.Text = "Superficie V";
+            // 
+            // tipo1ToolStripMenuItem2
+            // 
+            this.tipo1ToolStripMenuItem2.Name = "tipo1ToolStripMenuItem2";
+            this.tipo1ToolStripMenuItem2.Size = new System.Drawing.Size(106, 22);
+            this.tipo1ToolStripMenuItem2.Text = "Tipo 1";
+            this.tipo1ToolStripMenuItem2.Click += new System.EventHandler(this.tipo1ToolStripMenuItem2_Click);
+            // 
+            // tipo2ToolStripMenuItem1
+            // 
+            this.tipo2ToolStripMenuItem1.Name = "tipo2ToolStripMenuItem1";
+            this.tipo2ToolStripMenuItem1.Size = new System.Drawing.Size(106, 22);
+            this.tipo2ToolStripMenuItem1.Text = "Tipo 2";
+            this.tipo2ToolStripMenuItem1.Click += new System.EventHandler(this.tipo2ToolStripMenuItem1_Click);
+            // 
+            // superficieRToolStripMenuItem
+            // 
+            this.superficieRToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tipo1ToolStripMenuItem1,
+            this.tipo2ToolStripMenuItem});
+            this.superficieRToolStripMenuItem.Name = "superficieRToolStripMenuItem";
+            this.superficieRToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.superficieRToolStripMenuItem.Text = "Superficie R";
+            // 
+            // tipo1ToolStripMenuItem1
+            // 
+            this.tipo1ToolStripMenuItem1.Name = "tipo1ToolStripMenuItem1";
+            this.tipo1ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.tipo1ToolStripMenuItem1.Text = "Tipo 1";
+            this.tipo1ToolStripMenuItem1.Click += new System.EventHandler(this.tipo1ToolStripMenuItem1_Click);
             // 
             // parcialIIIToolStripMenuItem
             // 
@@ -268,22 +331,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button3
+            // tipo2ToolStripMenuItem
             // 
-            this.button3.Location = new System.Drawing.Point(710, 22);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 88);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Correccion";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // segmento3DToolStripMenuItem
-            // 
-            this.segmento3DToolStripMenuItem.Name = "segmento3DToolStripMenuItem";
-            this.segmento3DToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.segmento3DToolStripMenuItem.Text = "Segmento 3D";
-            this.segmento3DToolStripMenuItem.Click += new System.EventHandler(this.segmento3DToolStripMenuItem_Click);
+            this.tipo2ToolStripMenuItem.Name = "tipo2ToolStripMenuItem";
+            this.tipo2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipo2ToolStripMenuItem.Text = "Tipo 2";
+            this.tipo2ToolStripMenuItem.Click += new System.EventHandler(this.tipo2ToolStripMenuItem_Click_1);
             // 
             // Form1
             // 
@@ -291,7 +344,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(822, 477);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
@@ -334,8 +386,14 @@
         private Button button1;
         private ToolStripMenuItem examenToolStripMenuItem;
         private ToolStripMenuItem planoCartesianoToolStripMenuItem;
-        private Button button3;
         private ToolStripMenuItem axonometriaToolStripMenuItem;
         private ToolStripMenuItem segmento3DToolStripMenuItem;
+        private ToolStripMenuItem superficieRToolStripMenuItem;
+        private ToolStripMenuItem tipo1ToolStripMenuItem1;
+        private ToolStripMenuItem superficieVToolStripMenuItem;
+        private ToolStripMenuItem tipo1ToolStripMenuItem2;
+        private ToolStripMenuItem tipo2ToolStripMenuItem1;
+        private ToolStripMenuItem correcionToolStripMenuItem;
+        private ToolStripMenuItem tipo2ToolStripMenuItem;
     }
 }
