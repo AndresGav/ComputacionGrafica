@@ -20,6 +20,7 @@ namespace AppGrafica
                 case 2:
                     Caso2(canva, color);
                     break;
+
               
             }
         }
@@ -69,6 +70,8 @@ namespace AppGrafica
 
             } while (x <= 5);
         }
+
+
 
 
     }

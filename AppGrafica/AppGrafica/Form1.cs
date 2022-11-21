@@ -751,6 +751,39 @@ namespace AppGrafica
             pictureBox1.Image = bmp;
         }
 
+        private void parcialIIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tipo3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objSuV.tipo = 3;
+            objSuV.rd = 1.5f;
+            objSuV.setX(1);
+            objSuV.setY(0.5);
+            objSuV.setZ(1);
+
+            objSuV.Encender(bmp, Color.Red);
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void tipo4HiperboloiddeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objSuV.tipo = 4;
+            objSuV.a = 1;
+            objSuV.b = 1;
+            objSuV.c = 1;
+            objSuV.setX(0);
+            objSuV.setY(0);
+            objSuV.setZ(0);
+
+            objSuV.Encender(bmp, Color.Red);
+
+            pictureBox1.Image = bmp;
+        }
+
         private void btnParabola_Click(object sender, EventArgs e)
         {
 

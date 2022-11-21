@@ -57,11 +57,12 @@
             this.superficieVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipo1ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.tipo2ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.superficieRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipo1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tipo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parcialIIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parcialIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo4HiperboloiddeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -266,8 +267,7 @@
             this.axonometriaToolStripMenuItem,
             this.segmento3DToolStripMenuItem,
             this.superficieVToolStripMenuItem,
-            this.superficieRToolStripMenuItem,
-            this.parcialIIToolStripMenuItem});
+            this.superficieRToolStripMenuItem});
             this.parcial2ToolStripMenuItem.Name = "parcial2ToolStripMenuItem";
             this.parcial2ToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.parcial2ToolStripMenuItem.Text = "Parcial II";
@@ -290,7 +290,9 @@
             // 
             this.superficieVToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tipo1ToolStripMenuItem2,
-            this.tipo2ToolStripMenuItem1});
+            this.tipo2ToolStripMenuItem1,
+            this.tipo3ToolStripMenuItem,
+            this.tipo4HiperboloiddeToolStripMenuItem});
             this.superficieVToolStripMenuItem.Name = "superficieVToolStripMenuItem";
             this.superficieVToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.superficieVToolStripMenuItem.Text = "Superficie V";
@@ -298,16 +300,23 @@
             // tipo1ToolStripMenuItem2
             // 
             this.tipo1ToolStripMenuItem2.Name = "tipo1ToolStripMenuItem2";
-            this.tipo1ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.tipo1ToolStripMenuItem2.Size = new System.Drawing.Size(185, 22);
             this.tipo1ToolStripMenuItem2.Text = "Tipo 1";
             this.tipo1ToolStripMenuItem2.Click += new System.EventHandler(this.tipo1ToolStripMenuItem2_Click);
             // 
             // tipo2ToolStripMenuItem1
             // 
             this.tipo2ToolStripMenuItem1.Name = "tipo2ToolStripMenuItem1";
-            this.tipo2ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.tipo2ToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
             this.tipo2ToolStripMenuItem1.Text = "Tipo 2";
             this.tipo2ToolStripMenuItem1.Click += new System.EventHandler(this.tipo2ToolStripMenuItem1_Click);
+            // 
+            // tipo3ToolStripMenuItem
+            // 
+            this.tipo3ToolStripMenuItem.Name = "tipo3ToolStripMenuItem";
+            this.tipo3ToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.tipo3ToolStripMenuItem.Text = "Tipo 3";
+            this.tipo3ToolStripMenuItem.Click += new System.EventHandler(this.tipo3ToolStripMenuItem_Click);
             // 
             // superficieRToolStripMenuItem
             // 
@@ -321,14 +330,14 @@
             // tipo1ToolStripMenuItem1
             // 
             this.tipo1ToolStripMenuItem1.Name = "tipo1ToolStripMenuItem1";
-            this.tipo1ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.tipo1ToolStripMenuItem1.Size = new System.Drawing.Size(106, 22);
             this.tipo1ToolStripMenuItem1.Text = "Tipo 1";
             this.tipo1ToolStripMenuItem1.Click += new System.EventHandler(this.tipo1ToolStripMenuItem1_Click);
             // 
             // tipo2ToolStripMenuItem
             // 
             this.tipo2ToolStripMenuItem.Name = "tipo2ToolStripMenuItem";
-            this.tipo2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipo2ToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.tipo2ToolStripMenuItem.Text = "Tipo 2";
             this.tipo2ToolStripMenuItem.Click += new System.EventHandler(this.tipo2ToolStripMenuItem_Click_1);
             // 
@@ -338,11 +347,12 @@
             this.parcialIIIToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.parcialIIIToolStripMenuItem.Text = "Parcial III";
             // 
-            // parcialIIToolStripMenuItem
+            // tipo4HiperboloiddeToolStripMenuItem
             // 
-            this.parcialIIToolStripMenuItem.Name = "parcialIIToolStripMenuItem";
-            this.parcialIIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.parcialIIToolStripMenuItem.Text = "Parcial II";
+            this.tipo4HiperboloiddeToolStripMenuItem.Name = "tipo4HiperboloiddeToolStripMenuItem";
+            this.tipo4HiperboloiddeToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.tipo4HiperboloiddeToolStripMenuItem.Text = "Tipo 4 Hiperboloidde";
+            this.tipo4HiperboloiddeToolStripMenuItem.Click += new System.EventHandler(this.tipo4HiperboloiddeToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -400,6 +410,7 @@
         private ToolStripMenuItem correcionToolStripMenuItem;
         private ToolStripMenuItem tipo2ToolStripMenuItem;
         private ToolStripMenuItem animacionToolStripMenuItem1;
-        private ToolStripMenuItem parcialIIToolStripMenuItem;
+        private ToolStripMenuItem tipo3ToolStripMenuItem;
+        private ToolStripMenuItem tipo4HiperboloiddeToolStripMenuItem;
     }
 }
