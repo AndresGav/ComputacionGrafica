@@ -759,7 +759,7 @@ namespace AppGrafica
         private void tipo3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             objSuV.tipo = 3;
-            objSuV.rd = 1.5f;
+            objSuV.rd = 1f;
             objSuV.setX(1);
             objSuV.setY(0.5);
             objSuV.setZ(1);
