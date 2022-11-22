@@ -122,7 +122,7 @@ namespace AppGrafica
         {
             Vector3D v3d = new Vector3D();
 
-            float u = -(3.1416f * 2f), du = 0.050f;
+            float u = -((float)Math.PI / 2f), du = 0.050f;
 
             v3d.color = color;
 
@@ -138,11 +138,11 @@ namespace AppGrafica
                     v3d.Encender(canva);
                     v += dv;
 
-                } while (v <= 2 * Math.PI);
+                } while (v <=  Math.PI * 2);
 
                 u += du;
 
-            } while (u <= 2 * Math.PI);
+            } while (u <=  Math.PI/2);
         }
     }
 }

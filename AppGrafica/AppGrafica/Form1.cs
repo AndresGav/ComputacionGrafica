@@ -772,11 +772,11 @@ namespace AppGrafica
         private void tipo4HiperboloiddeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             objSuV.tipo = 4;
-            objSuV.a = 1;
-            objSuV.b = 1;
-            objSuV.c = 1;
-            objSuV.setX(0);
-            objSuV.setY(0);
+            objSuV.a = 0.8;
+            objSuV.b = 0.8;
+            objSuV.c = 0.8;
+            objSuV.setX(-.5);
+            objSuV.setY(0.8);
             objSuV.setZ(0);
 
             objSuV.Encender(bmp, Color.Red);
