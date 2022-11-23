@@ -70,6 +70,7 @@
             this.tipo5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipo6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parcialIIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -417,12 +418,24 @@
             this.parcialIIIToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.parcialIIIToolStripMenuItem.Text = "Parcial III";
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(710, 281);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 88);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Ecuacion";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(822, 477);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
@@ -482,5 +495,6 @@
         private ToolStripMenuItem tipo4ToolStripMenuItem;
         private ToolStripMenuItem tipo5ToolStripMenuItem;
         private ToolStripMenuItem tipo6ToolStripMenuItem;
+        private Button button1;
     }
 }

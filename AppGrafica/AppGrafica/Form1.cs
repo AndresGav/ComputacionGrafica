@@ -27,6 +27,9 @@ namespace AppGrafica
         int colorT;
         Color c;
         Color[] paleta1 = new Color[16];
+        Color[] paleta2 = new Color[16];
+        Color[] paleta3 = new Color[16];
+
 
         public Form1()
         {
@@ -50,7 +53,18 @@ namespace AppGrafica
             paleta1[14] = Color.Yellow;
             paleta1[15] = Color.White;
 
-          
+            for(int i = 0; i < 16; i++)
+            {
+                float x = 2.66f * i + 90;
+                paleta2[i] = Color.FromArgb(180, (int)x, 40);
+            }
+
+            for (int i = 0; i < 16; i++)
+            {
+                float x = 2.3f * i + 220;
+                paleta3[i] = Color.FromArgb((int)x, (int)x, (int)x);
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -826,7 +840,7 @@ namespace AppGrafica
                 {
                 
            
-                    colorT = (int)(((i - 100 * (Math.Sin(i) - 700)) / -700 * -.2) + ((0.8 * j - i) / 700)) % 13; ;
+                    colorT = (int)(((i - 100 * (Math.Sin(i) - 700)) / -700 * -.2) + ((0.8 * j - i) / 700)) % 13; 
 
                     if (colorT > 15 || colorT < 0)
                     {
@@ -966,6 +980,35 @@ namespace AppGrafica
                     //x += MathF.PI ;
                 }
                 x += MathF.PI *0.8f;
+            }
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+
+           
+
+            for (int i = 0; i < 700; i++)
+            {
+                for (int j = 0; j < 500; j++)
+                {
+         
+                    colorT = (int)(Math.E * (i / 2) + Math.PI * (Math.Pow(j, 2)) + j * i) % 6;
+
+                    if (colorT > 15 || colorT < 0)
+                    {
+                        colorT = rd.Next(15, 15);
+                    }
+
+                    c = paleta3[colorT];
+
+                    bmp.SetPixel(i, j, c);
+
+                
+                }
+               
             }
 
             pictureBox1.Image = bmp;
