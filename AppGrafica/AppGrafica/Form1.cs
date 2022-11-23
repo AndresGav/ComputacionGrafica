@@ -22,10 +22,35 @@ namespace AppGrafica
         SuperficieV objSuV = new SuperficieV();
 
 
+        //PALETAS TAPETES VARIABLES
+        Random rd = new Random();
+        int colorT;
+        Color c;
+        Color[] paleta1 = new Color[16];
 
         public Form1()
         {
             InitializeComponent();
+
+
+            paleta1[0] = Color.Black;
+            paleta1[1] = Color.Navy;
+            paleta1[2] = Color.Green;
+            paleta1[3] = Color.Aqua;
+            paleta1[4] = Color.Red;
+            paleta1[5] = Color.Purple;
+            paleta1[6] = Color.Maroon;
+            paleta1[7] = Color.LightGray;
+            paleta1[8] = Color.DarkGray;
+            paleta1[9] = Color.Blue;
+            paleta1[10] = Color.Lime;
+            paleta1[11] = Color.Silver;
+            paleta1[12] = Color.Teal;
+            paleta1[13] = Color.Fuchsia;
+            paleta1[14] = Color.Yellow;
+            paleta1[15] = Color.White;
+
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -716,8 +741,8 @@ namespace AppGrafica
             //PARABOLOIDE HIPERBOLICO
             SuperficieR obj = new SuperficieR();
             obj.tipo = 2;
-            obj.Fv = 0.10f;
-
+            obj.Fv = 0.1f;
+            obj.z0 = 3;
             obj.Encender(bmp, Color.Black);
 
             pictureBox1.Image = bmp;
@@ -780,6 +805,168 @@ namespace AppGrafica
             objSuV.setZ(0);
 
             objSuV.Encender(bmp, Color.Red);
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
+          
+
+  
+
+        }
+
+        private void tipo1ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 700; i++)
+            {
+                for (int j = 0; j < 500; j++)
+                {
+                
+           
+                    colorT = (int)(((i - 100 * (Math.Sin(i) - 700)) / -700 * -.2) + ((0.8 * j - i) / 700)) % 13; ;
+
+                    if (colorT > 15 || colorT < 0)
+                    {
+                        colorT = rd.Next(0, 15);
+                    }
+
+                    c = paleta1[colorT];
+
+                    bmp.SetPixel(i, j, c);
+
+                }
+            }
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void tipo2ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 700; i++)
+            {
+                for (int j = 0; j < 500; j++)
+                {
+            
+               
+                    colorT = (int)((i * j + i * j) + (i * j + i * j) * 0.2 + 1) % 10; ;
+
+                    if (colorT > 15 || colorT < 0)
+                    {
+                        colorT = rd.Next(0, 15);
+                    }
+
+                    c = paleta1[colorT];
+
+                    bmp.SetPixel(i, j, c);
+
+                }
+            }
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void tipo3ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 700; i++)
+            {
+                for (int j = 0; j < 500; j++)
+                {
+               
+                    colorT = (int)((i * i + j * j) + (i * i + j * j)) % 15;
+
+                    if (colorT > 15 || colorT < 0)
+                    {
+                        colorT = rd.Next(0, 15);
+                    }
+
+                    c = paleta1[colorT];
+
+                    bmp.SetPixel(i, j, c);
+
+                }
+            }
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void tipo4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 700; i++)
+            {
+                for (int j = 0; j < 500; j++)
+                {
+               
+                    
+                    colorT = (int)((i * i + j * j) + (i * i + j * j) - (i * i + j * j) * (i * i + j * j)) % 15;
+
+                    if (colorT > 15 || colorT < 0)
+                    {
+                        colorT = rd.Next(15, 15);
+                    }
+
+                    c = paleta1[colorT];
+
+                    bmp.SetPixel(i, j, c);
+
+                }
+            }
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void tipo5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 700; i++)
+            {
+                for (int j = 0; j < 500; j++)
+                {
+                    colorT = (int)(Math.Abs(Math.Sin(j + 10) * Math.Cos(i + 10)) * i * 0.1) % rd.Next(15, 15);
+
+                    if (colorT > 15 || colorT < 0)
+                    {
+                        colorT = rd.Next(0, 15);
+                    }
+
+                    c = paleta1[colorT];
+
+                    bmp.SetPixel(i, j, c);
+
+                }
+            }
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void tipo6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            float  x = 0;
+
+            for (int i = 0; i < 700; i++)
+            {
+                for (int j = 0; j < 500; j++)
+                {
+                    //i*j * j*i + i * j * j * i
+                    //(int)( Math.PI + x * j ) % 15; 
+                    colorT = (int)( Math.PI + x * j + i ) % 3; 
+
+
+                    if (colorT > 15 || colorT < 0)
+                    {
+                        colorT = rd.Next(15, 15);
+                    }
+
+                    c = paleta1[colorT];
+
+                    bmp.SetPixel(i, j, c);
+
+                    //x += MathF.PI ;
+                }
+                x += MathF.PI *0.8f;
+            }
 
             pictureBox1.Image = bmp;
         }

@@ -58,11 +58,18 @@
             this.tipo1ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.tipo2ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tipo3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo4HiperboloiddeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.superficieRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipo1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tipo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paletasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo2ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo3ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipo6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parcialIIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tipo4HiperboloiddeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -267,7 +274,8 @@
             this.axonometriaToolStripMenuItem,
             this.segmento3DToolStripMenuItem,
             this.superficieVToolStripMenuItem,
-            this.superficieRToolStripMenuItem});
+            this.superficieRToolStripMenuItem,
+            this.paletasToolStripMenuItem});
             this.parcial2ToolStripMenuItem.Name = "parcial2ToolStripMenuItem";
             this.parcial2ToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.parcial2ToolStripMenuItem.Text = "Parcial II";
@@ -318,6 +326,13 @@
             this.tipo3ToolStripMenuItem.Text = "Tipo 3";
             this.tipo3ToolStripMenuItem.Click += new System.EventHandler(this.tipo3ToolStripMenuItem_Click);
             // 
+            // tipo4HiperboloiddeToolStripMenuItem
+            // 
+            this.tipo4HiperboloiddeToolStripMenuItem.Name = "tipo4HiperboloiddeToolStripMenuItem";
+            this.tipo4HiperboloiddeToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.tipo4HiperboloiddeToolStripMenuItem.Text = "Tipo 4 Hiperboloidde";
+            this.tipo4HiperboloiddeToolStripMenuItem.Click += new System.EventHandler(this.tipo4HiperboloiddeToolStripMenuItem_Click);
+            // 
             // superficieRToolStripMenuItem
             // 
             this.superficieRToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -341,18 +356,66 @@
             this.tipo2ToolStripMenuItem.Text = "Tipo 2";
             this.tipo2ToolStripMenuItem.Click += new System.EventHandler(this.tipo2ToolStripMenuItem_Click_1);
             // 
+            // paletasToolStripMenuItem
+            // 
+            this.paletasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tipo1ToolStripMenuItem,
+            this.tipo2ToolStripMenuItem2,
+            this.tipo3ToolStripMenuItem1,
+            this.tipo4ToolStripMenuItem,
+            this.tipo5ToolStripMenuItem,
+            this.tipo6ToolStripMenuItem});
+            this.paletasToolStripMenuItem.Name = "paletasToolStripMenuItem";
+            this.paletasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.paletasToolStripMenuItem.Text = "Paletas";
+            // 
+            // tipo1ToolStripMenuItem
+            // 
+            this.tipo1ToolStripMenuItem.Name = "tipo1ToolStripMenuItem";
+            this.tipo1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipo1ToolStripMenuItem.Text = "Tipo 1";
+            this.tipo1ToolStripMenuItem.Click += new System.EventHandler(this.tipo1ToolStripMenuItem_Click_1);
+            // 
+            // tipo2ToolStripMenuItem2
+            // 
+            this.tipo2ToolStripMenuItem2.Name = "tipo2ToolStripMenuItem2";
+            this.tipo2ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.tipo2ToolStripMenuItem2.Text = "Tipo 2";
+            this.tipo2ToolStripMenuItem2.Click += new System.EventHandler(this.tipo2ToolStripMenuItem2_Click);
+            // 
+            // tipo3ToolStripMenuItem1
+            // 
+            this.tipo3ToolStripMenuItem1.Name = "tipo3ToolStripMenuItem1";
+            this.tipo3ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.tipo3ToolStripMenuItem1.Text = "Tipo 3";
+            this.tipo3ToolStripMenuItem1.Click += new System.EventHandler(this.tipo3ToolStripMenuItem1_Click);
+            // 
+            // tipo4ToolStripMenuItem
+            // 
+            this.tipo4ToolStripMenuItem.Name = "tipo4ToolStripMenuItem";
+            this.tipo4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipo4ToolStripMenuItem.Text = "Tipo 4";
+            this.tipo4ToolStripMenuItem.Click += new System.EventHandler(this.tipo4ToolStripMenuItem_Click);
+            // 
+            // tipo5ToolStripMenuItem
+            // 
+            this.tipo5ToolStripMenuItem.Name = "tipo5ToolStripMenuItem";
+            this.tipo5ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipo5ToolStripMenuItem.Text = "Tipo 5";
+            this.tipo5ToolStripMenuItem.Click += new System.EventHandler(this.tipo5ToolStripMenuItem_Click);
+            // 
+            // tipo6ToolStripMenuItem
+            // 
+            this.tipo6ToolStripMenuItem.Name = "tipo6ToolStripMenuItem";
+            this.tipo6ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipo6ToolStripMenuItem.Text = "Tipo 6";
+            this.tipo6ToolStripMenuItem.Click += new System.EventHandler(this.tipo6ToolStripMenuItem_Click);
+            // 
             // parcialIIIToolStripMenuItem
             // 
             this.parcialIIIToolStripMenuItem.Name = "parcialIIIToolStripMenuItem";
             this.parcialIIIToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.parcialIIIToolStripMenuItem.Text = "Parcial III";
-            // 
-            // tipo4HiperboloiddeToolStripMenuItem
-            // 
-            this.tipo4HiperboloiddeToolStripMenuItem.Name = "tipo4HiperboloiddeToolStripMenuItem";
-            this.tipo4HiperboloiddeToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
-            this.tipo4HiperboloiddeToolStripMenuItem.Text = "Tipo 4 Hiperboloidde";
-            this.tipo4HiperboloiddeToolStripMenuItem.Click += new System.EventHandler(this.tipo4HiperboloiddeToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -412,5 +475,12 @@
         private ToolStripMenuItem animacionToolStripMenuItem1;
         private ToolStripMenuItem tipo3ToolStripMenuItem;
         private ToolStripMenuItem tipo4HiperboloiddeToolStripMenuItem;
+        private ToolStripMenuItem paletasToolStripMenuItem;
+        private ToolStripMenuItem tipo1ToolStripMenuItem;
+        private ToolStripMenuItem tipo2ToolStripMenuItem2;
+        private ToolStripMenuItem tipo3ToolStripMenuItem1;
+        private ToolStripMenuItem tipo4ToolStripMenuItem;
+        private ToolStripMenuItem tipo5ToolStripMenuItem;
+        private ToolStripMenuItem tipo6ToolStripMenuItem;
     }
 }
