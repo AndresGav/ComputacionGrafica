@@ -1001,44 +1001,28 @@ namespace AppGrafica
 
            
 
-            for (int i = 0; i < 700; i++)
-            {
-                for (int j = 0; j < 500; j++)
-                {
-         
-                    colorT = (int)(Math.E * (i / 2) + Math.PI * (Math.Pow(j, 2)) + j * i) % 6;
-
-                    if (colorT > 15 || colorT < 0)
-                    {
-                        colorT = rd.Next(15, 15);
-                    }
-
-                    c = paleta3[colorT];
-
-                    bmp.SetPixel(i, j, c);
-
-                
-                }
-               
-            }
-
-            pictureBox1.Image = bmp;
+            
         }
 
         private void button3_Click_2(object sender, EventArgs e)
         {
 
 
+
+        }
+
+        private void aguaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             for (int i = 0; i < 700; i++)
             {
                 for (int j = 0; j < 500; j++)
                 {
 
-                    colorT = (int)((i * i + j * j) * (i * i + j * j) + i *.69 + j + 100) % 4;
+                    colorT = (int)((i * i + j * j) * (i * i + j * j) + i * .69 + j + 100) % 4;
 
                     if (colorT > 15 || colorT < 0)
                     {
-                        colorT = rd.Next(5,10 );
+                        colorT = rd.Next(5, 10);
                     }
 
                     c = paletaAgua[colorT];
@@ -1051,6 +1035,192 @@ namespace AppGrafica
             }
 
             pictureBox1.Image = bmp;
+        }
+
+        private void hieloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 700; i++)
+            {
+                for (int j = 0; j < 500; j++)
+                {
+
+                    colorT = (int)(Math.E * (i / 2) + Math.PI * (Math.Pow(j, 2)) + j * i) % 6;
+
+                    if (colorT > 15 || colorT < 0)
+                    {
+                        colorT = rd.Next(15, 15);
+                    }
+
+                    c = paleta3[colorT];
+
+                    bmp.SetPixel(i, j, c);
+
+
+                }
+
+            }
+
+            pictureBox1.Image = bmp;
+        }
+
+        async private void button1_Click_4(object sender, EventArgs e)
+        {
+            float x = -5;
+            objCir.rd = 0.8;
+            objCir.color = Color.DarkBlue;
+            objCir.y0 = 0;
+
+         
+
+            pictureBox1.Image = bmp;
+
+            Vector vec = new Vector();
+            vec.color = Color.Red;
+            double t = -8, dt = 0.0001;
+
+            do
+            {
+                vec.x0 = t;
+                vec.y0 = -(Math.Pow(t, 2) + (12 * t) + 32);
+                vec.Encender(bmp);
+                t = t + dt;
+            } while (t <= -4);
+
+            t = -4;
+            do
+            {
+                vec.x0 = t;
+                vec.y0 = (-Math.Pow(t, 2) - (4 * t)) / 1.3;
+                vec.Encender(bmp);
+                t = t + dt;
+            } while (t <= 0);
+            t = 0;
+            do
+            {
+                vec.x0 = t;
+                vec.y0 = (-Math.Pow(t, 2) + (4 * t)) / 1.8;
+                vec.Encender(bmp);
+                t = t + dt;
+            } while (t <= 4);
+            t = 4;
+            do
+            {
+                vec.x0 = t;
+                vec.y0 = (-Math.Pow(t, 2) + (12 * t) - 32) / 3;
+                vec.Encender(bmp);
+                t = t + dt;
+
+            } while (t <= 8);
+
+            pictureBox1.Image = bmp;
+
+            //ANIMACION 1
+            x = -5;
+            objCir.rd = 0.3;
+            objCir.color = Color.DarkBlue;
+            objCir.y0 = 0;
+            t = -8;
+            do
+            {
+                objCir.x0 = t;
+                objCir.y0 = -(Math.Pow(t, 2) + (12 * t) + 32);
+
+                objCir.Encender(bmp);
+                pictureBox1.Image = bmp;
+
+                await Task.Delay(100);
+
+                objCir.Apagar(bmp);
+                pictureBox1.Image = bmp;
+
+
+                t += 0.2f;
+
+            } while (t <= -4);
+
+            pictureBox1.Image = bmp;
+
+            //ANIMACION 2
+            x = -5;
+            objCir.rd = 0.3;
+            objCir.color = Color.DarkBlue;
+            objCir.y0 = 0;
+            t = -4;
+            do
+            {
+                objCir.x0 = t;
+                objCir.y0 = (-Math.Pow(t, 2) - (4 * t)) / 1.3;
+
+                objCir.Encender(bmp);
+                pictureBox1.Image = bmp;
+
+                await Task.Delay(100);
+
+                objCir.Apagar(bmp);
+                pictureBox1.Image = bmp;
+
+
+                t += 0.2f;
+
+            } while (t <= 0);
+
+            pictureBox1.Image = bmp;
+
+            //ANIMACION 3
+            x = -5;
+            objCir.rd = 0.3;
+            objCir.color = Color.DarkBlue;
+            objCir.y0 = 0;
+            t = 0;
+            do
+            {
+                objCir.x0 = t;
+                objCir.y0 = (-Math.Pow(t, 2) + (4 * t)) / 1.8;
+
+                objCir.Encender(bmp);
+                pictureBox1.Image = bmp;
+
+                await Task.Delay(100);
+
+                objCir.Apagar(bmp);
+                pictureBox1.Image = bmp;
+
+
+                t += 0.2f;
+
+            } while (t <= 4);
+
+            pictureBox1.Image = bmp;
+
+
+            //ANIMACION 4
+            x = -5;
+            objCir.rd = 0.3;
+            objCir.color = Color.DarkBlue;
+            objCir.y0 = 0;
+            t = 4;
+            do
+            {
+                objCir.x0 = t;
+                objCir.y0 = (-Math.Pow(t, 2) + (12 * t) - 32) / 3;
+
+                objCir.Encender(bmp);
+                pictureBox1.Image = bmp;
+
+                await Task.Delay(100);
+
+                objCir.Apagar(bmp);
+                pictureBox1.Image = bmp;
+
+
+                t += 0.2f;
+
+            } while (t <= 8);
+
+            pictureBox1.Image = bmp;
+
+
+      
         }
 
         private void btnParabola_Click(object sender, EventArgs e)

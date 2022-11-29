@@ -12,18 +12,18 @@ namespace AppGrafica
         public void Encender(Bitmap bmp)
         {
           
-            double x= -1;
+            double x= 3;
             Vector obj = new Vector();
 
             do
             {
                 obj.setX(x);
-                obj.setY(x * x - 3);
+                obj.setY(-((x-3)*(x+0))/2);
                 obj.color = Color.Black;
                 obj.Encender(bmp);
                 x += 0.01;
 
-            } while (x <= 3);
+            } while (x <= 6);
         }
     }
 }
