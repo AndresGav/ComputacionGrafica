@@ -71,6 +71,7 @@
             this.tipo6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parcialIIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -284,14 +285,14 @@
             // axonometriaToolStripMenuItem
             // 
             this.axonometriaToolStripMenuItem.Name = "axonometriaToolStripMenuItem";
-            this.axonometriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.axonometriaToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.axonometriaToolStripMenuItem.Text = "Axonometria";
             this.axonometriaToolStripMenuItem.Click += new System.EventHandler(this.axonometriaToolStripMenuItem_Click);
             // 
             // segmento3DToolStripMenuItem
             // 
             this.segmento3DToolStripMenuItem.Name = "segmento3DToolStripMenuItem";
-            this.segmento3DToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.segmento3DToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.segmento3DToolStripMenuItem.Text = "Segmento 3D";
             this.segmento3DToolStripMenuItem.Click += new System.EventHandler(this.segmento3DToolStripMenuItem_Click);
             // 
@@ -303,7 +304,7 @@
             this.tipo3ToolStripMenuItem,
             this.tipo4HiperboloiddeToolStripMenuItem});
             this.superficieVToolStripMenuItem.Name = "superficieVToolStripMenuItem";
-            this.superficieVToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.superficieVToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.superficieVToolStripMenuItem.Text = "Superficie V";
             // 
             // tipo1ToolStripMenuItem2
@@ -340,7 +341,7 @@
             this.tipo1ToolStripMenuItem1,
             this.tipo2ToolStripMenuItem});
             this.superficieRToolStripMenuItem.Name = "superficieRToolStripMenuItem";
-            this.superficieRToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.superficieRToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.superficieRToolStripMenuItem.Text = "Superficie R";
             // 
             // tipo1ToolStripMenuItem1
@@ -367,48 +368,48 @@
             this.tipo5ToolStripMenuItem,
             this.tipo6ToolStripMenuItem});
             this.paletasToolStripMenuItem.Name = "paletasToolStripMenuItem";
-            this.paletasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.paletasToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.paletasToolStripMenuItem.Text = "Paletas";
             // 
             // tipo1ToolStripMenuItem
             // 
             this.tipo1ToolStripMenuItem.Name = "tipo1ToolStripMenuItem";
-            this.tipo1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipo1ToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.tipo1ToolStripMenuItem.Text = "Tipo 1";
             this.tipo1ToolStripMenuItem.Click += new System.EventHandler(this.tipo1ToolStripMenuItem_Click_1);
             // 
             // tipo2ToolStripMenuItem2
             // 
             this.tipo2ToolStripMenuItem2.Name = "tipo2ToolStripMenuItem2";
-            this.tipo2ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.tipo2ToolStripMenuItem2.Size = new System.Drawing.Size(106, 22);
             this.tipo2ToolStripMenuItem2.Text = "Tipo 2";
             this.tipo2ToolStripMenuItem2.Click += new System.EventHandler(this.tipo2ToolStripMenuItem2_Click);
             // 
             // tipo3ToolStripMenuItem1
             // 
             this.tipo3ToolStripMenuItem1.Name = "tipo3ToolStripMenuItem1";
-            this.tipo3ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.tipo3ToolStripMenuItem1.Size = new System.Drawing.Size(106, 22);
             this.tipo3ToolStripMenuItem1.Text = "Tipo 3";
             this.tipo3ToolStripMenuItem1.Click += new System.EventHandler(this.tipo3ToolStripMenuItem1_Click);
             // 
             // tipo4ToolStripMenuItem
             // 
             this.tipo4ToolStripMenuItem.Name = "tipo4ToolStripMenuItem";
-            this.tipo4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipo4ToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.tipo4ToolStripMenuItem.Text = "Tipo 4";
             this.tipo4ToolStripMenuItem.Click += new System.EventHandler(this.tipo4ToolStripMenuItem_Click);
             // 
             // tipo5ToolStripMenuItem
             // 
             this.tipo5ToolStripMenuItem.Name = "tipo5ToolStripMenuItem";
-            this.tipo5ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipo5ToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.tipo5ToolStripMenuItem.Text = "Tipo 5";
             this.tipo5ToolStripMenuItem.Click += new System.EventHandler(this.tipo5ToolStripMenuItem_Click);
             // 
             // tipo6ToolStripMenuItem
             // 
             this.tipo6ToolStripMenuItem.Name = "tipo6ToolStripMenuItem";
-            this.tipo6ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipo6ToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.tipo6ToolStripMenuItem.Text = "Tipo 6";
             this.tipo6ToolStripMenuItem.Click += new System.EventHandler(this.tipo6ToolStripMenuItem_Click);
             // 
@@ -429,12 +430,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(710, 187);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 88);
+            this.button3.TabIndex = 21;
+            this.button3.Text = "AGUA";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(822, 477);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
@@ -496,5 +509,6 @@
         private ToolStripMenuItem tipo5ToolStripMenuItem;
         private ToolStripMenuItem tipo6ToolStripMenuItem;
         private Button button1;
+        private Button button3;
     }
 }

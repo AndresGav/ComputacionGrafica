@@ -30,6 +30,8 @@ namespace AppGrafica
         Color[] paleta2 = new Color[16];
         Color[] paleta3 = new Color[16];
 
+        Color[] paletaAgua = new Color[16];
+
 
         public Form1()
         {
@@ -63,6 +65,15 @@ namespace AppGrafica
             {
                 float x = 2.3f * i + 220;
                 paleta3[i] = Color.FromArgb((int)x, (int)x, (int)x);
+            }
+
+            //PALETA AGUA
+            for (int i = 0; i < 16; i++)
+            {
+                float r = 14.33f * i + 4;
+                float g = 11.66f * i + 69;
+                float b = 5.6f * i + 153;
+                paletaAgua[i] = Color.FromArgb((int)r, (int)g, (int)b);
             }
 
         }
@@ -1009,6 +1020,34 @@ namespace AppGrafica
                 
                 }
                
+            }
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void button3_Click_2(object sender, EventArgs e)
+        {
+
+
+            for (int i = 0; i < 700; i++)
+            {
+                for (int j = 0; j < 500; j++)
+                {
+
+                    colorT = (int)((i * i + j * j) * (i * i + j * j) + i *.69 + j + 100) % 4;
+
+                    if (colorT > 15 || colorT < 0)
+                    {
+                        colorT = rd.Next(5,10 );
+                    }
+
+                    c = paletaAgua[colorT];
+
+                    bmp.SetPixel(i, j, c);
+
+
+                }
+
             }
 
             pictureBox1.Image = bmp;
