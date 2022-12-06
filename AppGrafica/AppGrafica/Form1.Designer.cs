@@ -72,8 +72,8 @@
             this.tapetesDeberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aguaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hieloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.animacionParabolaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parcialIIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.labelX = new System.Windows.Forms.Label();
             this.labelY = new System.Windows.Forms.Label();
@@ -285,7 +285,8 @@
             this.superficieVToolStripMenuItem,
             this.superficieRToolStripMenuItem,
             this.paletasToolStripMenuItem,
-            this.tapetesDeberToolStripMenuItem});
+            this.tapetesDeberToolStripMenuItem,
+            this.animacionParabolaToolStripMenuItem});
             this.parcial2ToolStripMenuItem.Name = "parcial2ToolStripMenuItem";
             this.parcial2ToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.parcial2ToolStripMenuItem.Text = "Parcial II";
@@ -293,14 +294,14 @@
             // axonometriaToolStripMenuItem
             // 
             this.axonometriaToolStripMenuItem.Name = "axonometriaToolStripMenuItem";
-            this.axonometriaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.axonometriaToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.axonometriaToolStripMenuItem.Text = "Axonometria";
             this.axonometriaToolStripMenuItem.Click += new System.EventHandler(this.axonometriaToolStripMenuItem_Click);
             // 
             // segmento3DToolStripMenuItem
             // 
             this.segmento3DToolStripMenuItem.Name = "segmento3DToolStripMenuItem";
-            this.segmento3DToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.segmento3DToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.segmento3DToolStripMenuItem.Text = "Segmento 3D";
             this.segmento3DToolStripMenuItem.Click += new System.EventHandler(this.segmento3DToolStripMenuItem_Click);
             // 
@@ -312,7 +313,7 @@
             this.tipo3ToolStripMenuItem,
             this.tipo4HiperboloiddeToolStripMenuItem});
             this.superficieVToolStripMenuItem.Name = "superficieVToolStripMenuItem";
-            this.superficieVToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.superficieVToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.superficieVToolStripMenuItem.Text = "Superficie V";
             // 
             // tipo1ToolStripMenuItem2
@@ -349,7 +350,7 @@
             this.tipo1ToolStripMenuItem1,
             this.tipo2ToolStripMenuItem});
             this.superficieRToolStripMenuItem.Name = "superficieRToolStripMenuItem";
-            this.superficieRToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.superficieRToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.superficieRToolStripMenuItem.Text = "Superficie R";
             // 
             // tipo1ToolStripMenuItem1
@@ -376,7 +377,7 @@
             this.tipo5ToolStripMenuItem,
             this.tipo6ToolStripMenuItem});
             this.paletasToolStripMenuItem.Name = "paletasToolStripMenuItem";
-            this.paletasToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.paletasToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.paletasToolStripMenuItem.Text = "Paletas";
             // 
             // tipo1ToolStripMenuItem
@@ -427,7 +428,7 @@
             this.aguaToolStripMenuItem,
             this.hieloToolStripMenuItem});
             this.tapetesDeberToolStripMenuItem.Name = "tapetesDeberToolStripMenuItem";
-            this.tapetesDeberToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.tapetesDeberToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.tapetesDeberToolStripMenuItem.Text = "Tapetes Deber";
             // 
             // aguaToolStripMenuItem
@@ -444,27 +445,23 @@
             this.hieloToolStripMenuItem.Text = "Hielo";
             this.hieloToolStripMenuItem.Click += new System.EventHandler(this.hieloToolStripMenuItem_Click);
             // 
+            // animacionParabolaToolStripMenuItem
+            // 
+            this.animacionParabolaToolStripMenuItem.Name = "animacionParabolaToolStripMenuItem";
+            this.animacionParabolaToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.animacionParabolaToolStripMenuItem.Text = "Animacion Parabola";
+            this.animacionParabolaToolStripMenuItem.Click += new System.EventHandler(this.animacionParabolaToolStripMenuItem_Click);
+            // 
             // parcialIIIToolStripMenuItem
             // 
             this.parcialIIIToolStripMenuItem.Name = "parcialIIIToolStripMenuItem";
             this.parcialIIIToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.parcialIIIToolStripMenuItem.Text = "Parcial III";
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(710, 338);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 88);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "PARABOLA";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_4);
-            // 
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(710, 244);
+            this.button3.Location = new System.Drawing.Point(710, 338);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 88);
             this.button3.TabIndex = 21;
@@ -475,7 +472,7 @@
             // labelX
             // 
             this.labelX.AutoSize = true;
-            this.labelX.Location = new System.Drawing.Point(726, 39);
+            this.labelX.Location = new System.Drawing.Point(710, 290);
             this.labelX.Name = "labelX";
             this.labelX.Size = new System.Drawing.Size(38, 15);
             this.labelX.TabIndex = 22;
@@ -484,7 +481,7 @@
             // labelY
             // 
             this.labelY.AutoSize = true;
-            this.labelY.Location = new System.Drawing.Point(726, 65);
+            this.labelY.Location = new System.Drawing.Point(710, 316);
             this.labelY.Name = "labelY";
             this.labelY.Size = new System.Drawing.Size(38, 15);
             this.labelY.TabIndex = 23;
@@ -499,7 +496,6 @@
             this.Controls.Add(this.labelY);
             this.Controls.Add(this.labelX);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
@@ -562,9 +558,9 @@
         private ToolStripMenuItem tapetesDeberToolStripMenuItem;
         private ToolStripMenuItem aguaToolStripMenuItem;
         private ToolStripMenuItem hieloToolStripMenuItem;
-        private Button button1;
         private Button button3;
         private Label labelX;
         private Label labelY;
+        private ToolStripMenuItem animacionParabolaToolStripMenuItem;
     }
 }

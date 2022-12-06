@@ -1065,12 +1065,107 @@ namespace AppGrafica
 
         async private void button1_Click_4(object sender, EventArgs e)
         {
+           
+
+
+      
+        }
+
+        async private void button3_Click_3(object sender, EventArgs e)
+        {
+            Vector vec = new Vector();
+            vec.color = Color.Red;
+            double x = -7, dx = 0.001;
+
+            do
+            {
+                vec.x0 = x;
+                vec.y0 = -(((x-7) * (x+7))/18);
+                vec.Encender(bmp);
+                x = x + dx;
+            } while (x <= 7);
+
+
+            pictureBox1.Image = bmp;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            int sx1 = 0;
+            int sy1 = 0;
+            int sx2 = 700;
+            int sy2 = 500;
+
+            double x1 = -7, x2 = 7;
+            double y1 = -5, y2 = 5;
+
+            void init(double sx, double sy, out double x, out double y)
+            {
+                x = ((x1 - x2) * (sx - sx1) / (sx1 - sx2)) + x1;
+                y = ((y2 - y1) * (sy - sy1) / (sy1 - sy2)) + y2;
+            }
+            double x, y;
+            objCir.rd = 0.3;
+            objCir.color = Color.DarkBlue;
+
+            init(e.X, e.Y, out x, out y);
+        
+            objCir.x0 = (x );
+            objCir.y0 = (y );
+            objCir.Encender(bmp);
+
+
+
+            //SEGMENTO
+            Segmento s = new Segmento();
+            s.color = Color.Yellow;
+            s.x0 = x;
+            s.y0 = y;
+            double хFinal = x;
+            double yfinal = -(((x + 7) * (x - 7)) / 18);
+            s.xf = хFinal;
+            s.yf = yfinal;
+            s.Encender(bmp);
+
+            pictureBox1.Image = bmp;
+
+
+            //REBOTE
+            Segmento sr = new Segmento();
+            sr.color = Color.Yellow;
+            sr.x0 = x;
+            sr.y0 = y;
+            хFinal = x;
+            yfinal = -(((x + 7) * (x - 7)) / 18);
+            sr.xf = хFinal;
+            sr.yf = yfinal;
+            sr.Encender(bmp);
+
+            pictureBox1.Image = bmp;
+
+            labelX.Text = (x).ToString();
+            labelY.Text = (y).ToString();
+        }
+
+        async private void animacionParabolaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             float x = -5;
             objCir.rd = 0.8;
             objCir.color = Color.DarkBlue;
             objCir.y0 = 0;
 
-         
+
 
             pictureBox1.Image = bmp;
 
@@ -1218,96 +1313,6 @@ namespace AppGrafica
             } while (t <= 8);
 
             pictureBox1.Image = bmp;
-
-
-      
-        }
-
-        async private void button3_Click_3(object sender, EventArgs e)
-        {
-            Vector vec = new Vector();
-            vec.color = Color.Red;
-            double x = -7, dx = 0.001;
-
-            do
-            {
-                vec.x0 = x;
-                vec.y0 = -(((x-7) * (x+7))/18);
-                vec.Encender(bmp);
-                x = x + dx;
-            } while (x <= 7);
-
-
-            pictureBox1.Image = bmp;
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
-        {
-            int sx1 = 0;
-            int sy1 = 0;
-            int sx2 = 700;
-            int sy2 = 500;
-
-            double x1 = -7, x2 = 7;
-            double y1 = -5, y2 = 5;
-
-            void init(double sx, double sy, out double x, out double y)
-            {
-                x = ((x1 - x2) * (sx - sx1) / (sx1 - sx2)) + x1;
-                y = ((y2 - y1) * (sy - sy1) / (sy1 - sy2)) + y2;
-            }
-            double x, y;
-            objCir.rd = 0.3;
-            objCir.color = Color.DarkBlue;
-
-            init(e.X, e.Y, out x, out y);
-        
-            objCir.x0 = (x );
-            objCir.y0 = (y );
-            objCir.Encender(bmp);
-
-
-
-            //SEGMENTO
-            Segmento s = new Segmento();
-            s.color = Color.Yellow;
-            s.x0 = x;
-            s.y0 = y;
-            double хFinal = x;
-            double yfinal = -(((x + 7) * (x - 7)) / 18);
-            s.xf = хFinal;
-            s.yf = yfinal;
-            s.Encender(bmp);
-
-            pictureBox1.Image = bmp;
-
-
-            //REBOTE
-            Segmento sr = new Segmento();
-            sr.color = Color.Yellow;
-            sr.x0 = x;
-            sr.y0 = y;
-            хFinal = x;
-            yfinal = -(((x + 7) * (x - 7)) / 18);
-            sr.xf = хFinal;
-            sr.yf = yfinal;
-            sr.Encender(bmp);
-
-            pictureBox1.Image = bmp;
-
-            labelX.Text = (x).ToString();
-            labelY.Text = (y).ToString();
         }
 
         private void btnParabola_Click(object sender, EventArgs e)
