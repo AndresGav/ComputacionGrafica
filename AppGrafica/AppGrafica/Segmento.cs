@@ -9,8 +9,8 @@ namespace AppGrafica
 {
     internal class Segmento: Vector
     {
-        public int xf;
-        public int yf;
+        public double xf;
+        public double yf;
 
          public void Encender(Bitmap bmp)
         {
