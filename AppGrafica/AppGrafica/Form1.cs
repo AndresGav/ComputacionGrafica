@@ -1152,8 +1152,16 @@ namespace AppGrafica
             sr.yf = yfinal;
             sr.Encender(bmp);
 
-            pictureBox1.Image = bmp;
 
+            int xp = (int)хFinal;
+            int yp = (int)yfinal;
+            //int m = 
+
+            //dibujar
+            //pictureBox1.Image = bmp;
+
+
+            //labels
             labelX.Text = (x).ToString();
             labelY.Text = (y).ToString();
         }
