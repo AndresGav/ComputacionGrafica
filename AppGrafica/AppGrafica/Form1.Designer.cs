@@ -73,10 +73,11 @@
             this.aguaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hieloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animacionParabolaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proyeccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parcialIIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button3 = new System.Windows.Forms.Button();
             this.labelX = new System.Windows.Forms.Label();
             this.labelY = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -286,7 +287,8 @@
             this.superficieRToolStripMenuItem,
             this.paletasToolStripMenuItem,
             this.tapetesDeberToolStripMenuItem,
-            this.animacionParabolaToolStripMenuItem});
+            this.animacionParabolaToolStripMenuItem,
+            this.proyeccionesToolStripMenuItem});
             this.parcial2ToolStripMenuItem.Name = "parcial2ToolStripMenuItem";
             this.parcial2ToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.parcial2ToolStripMenuItem.Text = "Parcial II";
@@ -452,27 +454,23 @@
             this.animacionParabolaToolStripMenuItem.Text = "Animacion Parabola";
             this.animacionParabolaToolStripMenuItem.Click += new System.EventHandler(this.animacionParabolaToolStripMenuItem_Click);
             // 
+            // proyeccionesToolStripMenuItem
+            // 
+            this.proyeccionesToolStripMenuItem.Name = "proyeccionesToolStripMenuItem";
+            this.proyeccionesToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.proyeccionesToolStripMenuItem.Text = "Proyecciones";
+            this.proyeccionesToolStripMenuItem.Click += new System.EventHandler(this.proyeccionesToolStripMenuItem_Click);
+            // 
             // parcialIIIToolStripMenuItem
             // 
             this.parcialIIIToolStripMenuItem.Name = "parcialIIIToolStripMenuItem";
             this.parcialIIIToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.parcialIIIToolStripMenuItem.Text = "Parcial III";
             // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(710, 338);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 88);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "PROYECCIONES";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_3);
-            // 
             // labelX
             // 
             this.labelX.AutoSize = true;
-            this.labelX.Location = new System.Drawing.Point(710, 290);
+            this.labelX.Location = new System.Drawing.Point(710, 24);
             this.labelX.Name = "labelX";
             this.labelX.Size = new System.Drawing.Size(38, 15);
             this.labelX.TabIndex = 22;
@@ -481,11 +479,22 @@
             // labelY
             // 
             this.labelY.AutoSize = true;
-            this.labelY.Location = new System.Drawing.Point(710, 316);
+            this.labelY.Location = new System.Drawing.Point(710, 50);
             this.labelY.Name = "labelY";
             this.labelY.Size = new System.Drawing.Size(38, 15);
             this.labelY.TabIndex = 23;
             this.labelY.Text = "label1";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(710, 338);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 88);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "ONDAS";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_5);
             // 
             // Form1
             // 
@@ -493,9 +502,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(822, 532);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.labelY);
             this.Controls.Add(this.labelX);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
@@ -558,9 +567,12 @@
         private ToolStripMenuItem tapetesDeberToolStripMenuItem;
         private ToolStripMenuItem aguaToolStripMenuItem;
         private ToolStripMenuItem hieloToolStripMenuItem;
-        private Button button3;
         private Label labelX;
         private Label labelY;
         private ToolStripMenuItem animacionParabolaToolStripMenuItem;
+        private Button button1;
+        private ToolStripMenuItem proyeccionesToolStripMenuItem;
+        private ToolStripMenuItem siToolStripMenuItem;
+        private ToolStripMenuItem noToolStripMenuItem;
     }
 }

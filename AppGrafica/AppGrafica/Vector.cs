@@ -87,5 +87,11 @@ namespace AppGrafica
                 canva.SetPixel(sX, sY, Color.WhiteSmoke);
             }
         }
+
+        public void Tranformar(double sx, double sy, out double x, out double y)
+        {
+            x = ((x1 - x2) * (sx - sx1) / (sx1 - sx2)) + x1;
+            y = ((y2 - y1) * (sy - sy1) / (sy1 - sy2)) + y2;
+        }
     }
 }
