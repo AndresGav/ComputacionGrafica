@@ -1074,7 +1074,7 @@ namespace AppGrafica
         async private void button3_Click_3(object sender, EventArgs e)
         {
             Vector vec = new Vector();
-            vec.color = Color.Red;
+            vec.color = Color.Yellow;
             double x = -7, dx = 0.001;
 
             do
@@ -1153,12 +1153,33 @@ namespace AppGrafica
             sr.Encender(bmp);
 
 
-            int xp = (int)хFinal;
-            int yp = (int)yfinal;
+            double xp = хFinal;
+            double yp = yfinal;
             //int m = 
+            Segmento segr = new Segmento();
+            segr.x0 = xp;
+            segr.y0 = yp;
+            segr.color = Color.Red;
+
+
+            if(xp < 0)
+            {
+                segr.xf = 7;
+                segr.yf = (9/xp)*(7-xp)+yp;
+            }
+            else
+            {
+                segr.xf = -7;
+                segr.yf = (9 / xp) * (-7 - xp) + yp;
+            }
+
+            segr.Encender(bmp);
+
+
+
 
             //dibujar
-            //pictureBox1.Image = bmp;
+            pictureBox1.Image = bmp;
 
 
             //labels

@@ -83,7 +83,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox1.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(0, 22);
             this.pictureBox1.Name = "pictureBox1";
