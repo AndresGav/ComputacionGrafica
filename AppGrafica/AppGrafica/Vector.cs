@@ -84,7 +84,7 @@ namespace AppGrafica
 
             if (sX >= 0 && sX < 700 && sY >= 0 && sY < 500)
             {
-                canva.SetPixel(sX, sY, Color.WhiteSmoke);
+                canva.SetPixel(sX, sY, Color.LightGray);
             }
         }
 

@@ -1374,6 +1374,97 @@ namespace AppGrafica
             pictureBox1.Image = bmp;
         }
 
+        async private void button3_Click_4(object sender, EventArgs e)
+        {
+            Circunferencia c = new Circunferencia();
+            c.x0 = 0;
+            c.y0 = 0;
+            c.rd = 3;
+            c.color = Color.Red;
+            c.Encender(bmp);
+            pictureBox1.Image = bmp;
+            Circunferencia c2 = new Circunferencia();
+            c2.x0 = 0;
+            c2.y0 = 0;
+            c2.rd = 5;
+            c2.color = Color.Blue;
+            c2.Encender(bmp);
+            pictureBox1.Image = bmp;
+            Circunferencia c3 = new Circunferencia();
+            c3.rd = 0.4;
+
+
+
+            // animación
+            double t = 0.05;
+            double r = 4;
+            do
+            {
+                c3.x0 = 0 + r * (double)Math.Cos(t);
+                c3.y0 = 0 + r * (double)Math.Sin(t);
+                c3.color = Color.Orange;
+                c3.Encender(bmp);
+                pictureBox1.Image = bmp;
+
+                // wait
+                await Task.Delay(100);
+
+                c3.Apagar(bmp);
+                pictureBox1.Image = bmp;
+                t += 0.1;
+
+
+
+            } while (t <= (2 * Math.PI));
+        }
+
+        async private void button4_Click_2(object sender, EventArgs e)
+        {
+            Circunferencia c = new Circunferencia();
+            c.x0 = 0;
+            c.y0 = 0;
+            c.rd = 3;
+            c.color = Color.Red;
+            c.Encender(bmp);
+            pictureBox1.Image = bmp;
+            Circunferencia c2 = new Circunferencia();
+            c2.x0 = 0;
+            c2.y0 = 0;
+            c2.rd = 5;
+            c2.color = Color.Blue;
+            c2.Encender(bmp);
+            pictureBox1.Image = bmp;
+            Circunferencia c3 = new Circunferencia();
+            c3.rd = 0.4;
+
+
+
+            // animación
+            objSeg.x0 = 0;
+            objSeg.y0 = 0;
+            objSeg.color = Color.Orange;
+
+            double t = 0.05;
+            double r = 5;
+            do
+            {
+                objSeg.xf = 0 + r * (double)Math.Cos(t);
+                objSeg.yf = 0 + r * (double)Math.Sin(t);
+                
+                objSeg.Encender(bmp);
+                pictureBox1.Image = bmp;
+
+                // wait
+                await Task.Delay(100);
+
+                objSeg.Apagar(bmp);
+                pictureBox1.Image = bmp;
+                t += 0.1;
+
+
+            } while (t <= (2 * Math.PI));
+        }
+
         private void btnParabola_Click(object sender, EventArgs e)
         {
 

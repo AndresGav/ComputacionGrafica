@@ -11,8 +11,6 @@ namespace AppGrafica
         public double t;
         Color[] paleta1 = new Color[16];
 
-
-
         public void GrafO(Bitmap bmp)
         {
             paleta1[0] = Color.Black;
@@ -38,8 +36,6 @@ namespace AppGrafica
             Color c;
 
 
-
-
             for (i = 0; i < 700; i++)
             {
                 for( j = 0; j < 500; j++)
@@ -51,11 +47,8 @@ namespace AppGrafica
                     c = paleta1[color];
 
                     bmp.SetPixel(i, j, c);
-                  
-
                     
                 }
-
             }
         }
     }
