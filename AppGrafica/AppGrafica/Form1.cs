@@ -32,6 +32,8 @@ namespace AppGrafica
 
         Color[] paletaAgua = new Color[16];
 
+        Color[] paletae = new Color[16];
+
         //VARIABLES AUXILIARES
         bool proyectar = false;
 
@@ -81,6 +83,15 @@ namespace AppGrafica
                 paletaAgua[i] = Color.FromArgb((int)r, (int)g, (int)b);
             }
 
+
+            //PALETA EXAMEN 
+            for (int i = 0; i < 16; i++)
+            {
+                float r = 14.33f * i + 4;
+                float g = 11.66f * i + 69;
+                float b = 5.6f * i + 153;
+                paleta3[i] = Color.FromArgb((int)r, (int)g, (int)b);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -1376,7 +1387,7 @@ namespace AppGrafica
 
         async private void button3_Click_4(object sender, EventArgs e)
         {
-            Circunferencia c = new Circunferencia();
+            /*Circunferencia c = new Circunferencia();
             c.x0 = 0;
             c.y0 = 0;
             c.rd = 3;
@@ -1415,22 +1426,16 @@ namespace AppGrafica
 
 
 
-            } while (t <= (2 * Math.PI));
+            } while (t <= (2 * Math.PI)); */
         }
 
         async private void button4_Click_2(object sender, EventArgs e)
         {
-            Circunferencia c = new Circunferencia();
-            c.x0 = 0;
-            c.y0 = 0;
-            c.rd = 3;
-            c.color = Color.Red;
-            c.Encender(bmp);
-            pictureBox1.Image = bmp;
+          
             Circunferencia c2 = new Circunferencia();
-            c2.x0 = 0;
-            c2.y0 = 0;
-            c2.rd = 5;
+            c2.x0 = -3;
+            c2.y0 = -2.5;
+            c2.rd = 2;
             c2.color = Color.Blue;
             c2.Encender(bmp);
             pictureBox1.Image = bmp;
@@ -1440,16 +1445,16 @@ namespace AppGrafica
 
 
             // animación
-            objSeg.x0 = 0;
-            objSeg.y0 = 0;
+            objSeg.x0 = -3;
+            objSeg.y0 = -2.5;
             objSeg.color = Color.Orange;
 
             double t = 0.05;
-            double r = 5;
+            double r = 1.5;
             do
             {
-                objSeg.xf = 0 + r * (double)Math.Cos(t);
-                objSeg.yf = 0 + r * (double)Math.Sin(t);
+                objSeg.xf = 0 + r * (double)Math.Sin(t) - 3;
+                objSeg.yf = 0 + r * (double)Math.Cos(t) - 2.5;
                 
                 objSeg.Encender(bmp);
                 pictureBox1.Image = bmp;

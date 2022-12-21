@@ -78,7 +78,6 @@
             this.labelX = new System.Windows.Forms.Label();
             this.labelY = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -498,21 +497,10 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_5);
             // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(710, 244);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 88);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "EXAMEN P 2";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_4);
-            // 
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(710, 150);
+            this.button4.Location = new System.Drawing.Point(710, 244);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 88);
             this.button4.TabIndex = 26;
@@ -527,7 +515,6 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(822, 532);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelY);
             this.Controls.Add(this.labelX);
@@ -600,7 +587,6 @@
         private ToolStripMenuItem proyeccionesToolStripMenuItem;
         private ToolStripMenuItem siToolStripMenuItem;
         private ToolStripMenuItem noToolStripMenuItem;
-        private Button button3;
         private Button button4;
     }
 }
