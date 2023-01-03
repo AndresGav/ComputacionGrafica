@@ -32,7 +32,7 @@ namespace AppGrafica
 
         Color[] paletaAgua = new Color[16];
 
-        Color[] paletae = new Color[16];
+        Color[] paletaE = new Color[16];
 
         //VARIABLES AUXILIARES
         bool proyectar = false;
@@ -84,12 +84,12 @@ namespace AppGrafica
             }
 
 
-            //PALETA EXAMEN 
+            //PALETA E 
             for (int i = 0; i < 16; i++)
             {
-                float r = 14.33f * i + 4;
-                float g = 11.66f * i + 69;
-                float b = 5.6f * i + 153;
+                float r = 8.66f * i + 100;
+                float g = 8.66f * i + 100;
+                float b = 7.66f * i + 105;
                 paleta3[i] = Color.FromArgb((int)r, (int)g, (int)b);
             }
         }
@@ -1359,8 +1359,10 @@ namespace AppGrafica
         {
             Onda objO = new Onda();
 
-            objO.t = 1;
-            objO.GrafO(bmp);
+            objO.t = 0;
+            objO.w = 1.5;
+            objO.v = 9.3;
+            objO.Interferencia(bmp);
 
             pictureBox1.Image = bmp;
         }
@@ -1470,7 +1472,47 @@ namespace AppGrafica
             } while (t <= (2 * Math.PI));
         }
 
-        private void btnParabola_Click(object sender, EventArgs e)
+        async private void button3_Click_5(object sender, EventArgs e)
+        {
+            Circunferencia c2 = new Circunferencia();
+            c2.x0 = 2;
+            c2.y0 = 1;
+            c2.rd = 2;
+            c2.color = Color.Blue;
+            c2.Encender(bmp);
+            pictureBox1.Image = bmp;
+            Circunferencia c3 = new Circunferencia();
+            c3.rd = 0.4;
+
+
+
+            // animación
+            objSeg.x0 = 2;
+            objSeg.y0 = 1;
+            objSeg.color = Color.Orange;
+
+            double t = 0.05;
+            double r = 1.5;
+            do
+            {
+                objSeg.xf = 2 + r * (double)Math.Sin(t) ;
+                objSeg.yf = 1 + r * (double)Math.Cos(t) ;
+
+                objSeg.Encender(bmp);
+                pictureBox1.Image = bmp;
+
+                // wait
+                await Task.Delay(100);
+
+                objSeg.Apagar(bmp);
+                pictureBox1.Image = bmp;
+                t += 0.1;
+
+
+            } while (t <= (2 * Math.PI));
+        }
+
+         private void btnParabola_Click(object sender, EventArgs e)
         {
 
         }
