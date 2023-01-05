@@ -1357,14 +1357,7 @@ namespace AppGrafica
 
         private void button1_Click_5(object sender, EventArgs e)
         {
-            Onda objO = new Onda();
-
-            objO.t = 0;
-            objO.w = 1.5;
-            objO.v = 9.3;
-            objO.Interferencia(bmp);
-
-            pictureBox1.Image = bmp;
+           
         }
 
         private void proyeccionesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1434,6 +1427,56 @@ namespace AppGrafica
         async private void button4_Click_2(object sender, EventArgs e)
         {
           
+            
+        }
+
+        async private void button3_Click_5(object sender, EventArgs e)
+        {
+            
+        }
+
+         async private void correccionParcialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Circunferencia c2 = new Circunferencia();
+            c2.x0 = 2;
+            c2.y0 = 1;
+            c2.rd = 2;
+            c2.color = Color.Blue;
+            c2.Encender(bmp);
+            pictureBox1.Image = bmp;
+            Circunferencia c3 = new Circunferencia();
+            c3.rd = 0.4;
+
+
+
+            // animación
+            objSeg.x0 = 2;
+            objSeg.y0 = 1;
+            objSeg.color = Color.Orange;
+
+            double t = 0.05;
+            double r = 1.5;
+            do
+            {
+                objSeg.xf = 2 + r * (double)Math.Sin(t);
+                objSeg.yf = 1 + r * (double)Math.Cos(t);
+
+                objSeg.Encender(bmp);
+                pictureBox1.Image = bmp;
+
+                // wait
+                await Task.Delay(100);
+
+                objSeg.Apagar(bmp);
+                pictureBox1.Image = bmp;
+                t += 0.1;
+
+
+            } while (t <= (2 * Math.PI));
+        }
+
+        async private void examenParcialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             Circunferencia c2 = new Circunferencia();
             c2.x0 = -3;
             c2.y0 = -2.5;
@@ -1457,7 +1500,7 @@ namespace AppGrafica
             {
                 objSeg.xf = 0 + r * (double)Math.Sin(t) - 3;
                 objSeg.yf = 0 + r * (double)Math.Cos(t) - 2.5;
-                
+
                 objSeg.Encender(bmp);
                 pictureBox1.Image = bmp;
 
@@ -1472,47 +1515,47 @@ namespace AppGrafica
             } while (t <= (2 * Math.PI));
         }
 
-        async private void button3_Click_5(object sender, EventArgs e)
+        private void ondasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Circunferencia c2 = new Circunferencia();
-            c2.x0 = 2;
-            c2.y0 = 1;
-            c2.rd = 2;
-            c2.color = Color.Blue;
-            c2.Encender(bmp);
+            Onda objO = new Onda();
+
+            objO.t = 0;
+            objO.w = 1.5;
+            objO.v = 9.3;
+            objO.Interferencia(bmp);
+
             pictureBox1.Image = bmp;
-            Circunferencia c3 = new Circunferencia();
-            c3.rd = 0.4;
-
-
-
-            // animación
-            objSeg.x0 = 2;
-            objSeg.y0 = 1;
-            objSeg.color = Color.Orange;
-
-            double t = 0.05;
-            double r = 1.5;
-            do
-            {
-                objSeg.xf = 2 + r * (double)Math.Sin(t) ;
-                objSeg.yf = 1 + r * (double)Math.Cos(t) ;
-
-                objSeg.Encender(bmp);
-                pictureBox1.Image = bmp;
-
-                // wait
-                await Task.Delay(100);
-
-                objSeg.Apagar(bmp);
-                pictureBox1.Image = bmp;
-                t += 0.1;
-
-
-            } while (t <= (2 * Math.PI));
         }
 
-         private void btnParabola_Click(object sender, EventArgs e)
+        async private void animacionOndasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /* double t = 0;
+             Onda objO = new Onda();
+             objO.w = 1.5;
+             objO.v = 9.3;
+             objO.t = 0;
+             objO.GrafO(bmp);
+             pictureBox1.Image = bmp;*/
+
+             double t = 0;
+             Onda objO = new Onda();
+             objO.w = 1.5;
+             objO.v = 9.3;
+             objO.t = t;
+             do
+             {
+                 objO.Interferencia(bmp);
+                 t += 0.02;
+                 objO.t = t;
+                 await Task.Delay(100);
+                 pictureBox1.Image = bmp;
+
+             }while (t <= 6 * Math.PI);
+            
+
+        }
+
+        private void btnParabola_Click(object sender, EventArgs e)
         {
 
         }

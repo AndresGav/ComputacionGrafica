@@ -32,15 +32,15 @@ namespace AppGrafica
             paleta1[15] = Color.White;
             
             int i;
-            for ( i = 0; i < 16; i++)
+            /*for ( i = 0; i < 16; i++)
             {
                 float r = 8.66f * i + 100;
                 float g = 8.66f * i + 100;
                 float b = 7.66f * i + 105;
                 paleta1[i] = Color.FromArgb((int)r, (int)g, (int)b);
-            }
+            }*/
 
-            int  j, color;
+            int j, color;
             double x, y;
             double z;
             Color c;
@@ -65,13 +65,13 @@ namespace AppGrafica
         public void Interferencia(Bitmap bmp)
         {
             int i;
-            for (i = 0; i < 16; i++)
+            /*for (i = 0; i < 16; i++)
             {
                 float r = 8.66f * i + 100;
                 float g = 8.66f * i + 100;
                 float b = 7.66f * i + 105;
                 paleta1[i] = Color.FromArgb((int)r, (int)g, (int)b);
-            }
+            }*/
             //
             paleta1[0] = Color.Black;
             paleta1[1] = Color.Navy;
