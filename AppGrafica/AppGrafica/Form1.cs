@@ -1555,6 +1555,20 @@ namespace AppGrafica
 
         }
 
+        private void onda3DToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Onda3D objO = new Onda3D();
+
+            /*objO.t = 0;
+            objO.w = 3;
+            objO.v = 9.8;
+            objO.m = 0.4;*/
+           
+            objO.Interferencia3F(bmp);
+
+            pictureBox1.Image = bmp;
+        }
+
         private void btnParabola_Click(object sender, EventArgs e)
         {
 
