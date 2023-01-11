@@ -1610,6 +1610,26 @@ namespace AppGrafica
             } while (t <= 6 * Math.PI);
         }
 
+        async private void animacion3D3FuentesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Onda3D objO = new Onda3D();
+            double t = 0;
+
+            do
+            {
+                objO.Interferencia3F(bmp, Color.Red);
+
+                await Task.Delay(100);
+                pictureBox1.Image = bmp;
+                objO.Interferencia3F(bmp, Color.Gainsboro);
+                pictureBox1.Image = bmp;
+                t += 0.02;
+                objO.t = t;
+
+            } while (t <= 6 * Math.PI);
+
+        }
+
         private void btnParabola_Click(object sender, EventArgs e)
         {
 
