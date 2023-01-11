@@ -1564,9 +1564,50 @@ namespace AppGrafica
             objO.v = 9.8;
             objO.m = 0.4;*/
            
-            objO.Interferencia3F(bmp);
+            objO.Interferencia3F(bmp, Color.Gainsboro);
 
             pictureBox1.Image = bmp;
+        }
+
+        async private void animacion3D1FuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Onda3D objO = new Onda3D();
+            double t = 0;
+           
+            do
+            {
+                objO.Encender(bmp,Color.Red);
+                
+                await Task.Delay(100);
+                pictureBox1.Image = bmp;
+                objO.Encender(bmp, Color.Gainsboro);
+                pictureBox1.Image = bmp;
+                t += 0.02;
+                objO.t = t;
+
+            } while (t <= 6 * Math.PI);
+
+   
+
+        }
+
+        async private void animacion3D2FuentesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Onda3D objO = new Onda3D();
+            double t = 0;
+
+            do
+            {
+                objO.Interferencia2F(bmp, Color.Red);
+
+                await Task.Delay(100);
+                pictureBox1.Image = bmp;
+                objO.Interferencia2F(bmp, Color.Gainsboro);
+                pictureBox1.Image = bmp;
+                t += 0.02;
+                objO.t = t;
+
+            } while (t <= 6 * Math.PI);
         }
 
         private void btnParabola_Click(object sender, EventArgs e)

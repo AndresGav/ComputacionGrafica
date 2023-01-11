@@ -80,8 +80,10 @@
             this.ondasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animacionOndasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.onda3DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.animacion3D1FuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelX = new System.Windows.Forms.Label();
             this.labelY = new System.Windows.Forms.Label();
+            this.animacion3D2FuentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -486,7 +488,9 @@
             this.parcialIIIToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ondasToolStripMenuItem,
             this.animacionOndasToolStripMenuItem,
-            this.onda3DToolStripMenuItem});
+            this.onda3DToolStripMenuItem,
+            this.animacion3D1FuenteToolStripMenuItem,
+            this.animacion3D2FuentesToolStripMenuItem});
             this.parcialIIIToolStripMenuItem.Name = "parcialIIIToolStripMenuItem";
             this.parcialIIIToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.parcialIIIToolStripMenuItem.Text = "Parcial III";
@@ -494,23 +498,30 @@
             // ondasToolStripMenuItem
             // 
             this.ondasToolStripMenuItem.Name = "ondasToolStripMenuItem";
-            this.ondasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ondasToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.ondasToolStripMenuItem.Text = "Ondas";
             this.ondasToolStripMenuItem.Click += new System.EventHandler(this.ondasToolStripMenuItem_Click);
             // 
             // animacionOndasToolStripMenuItem
             // 
             this.animacionOndasToolStripMenuItem.Name = "animacionOndasToolStripMenuItem";
-            this.animacionOndasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.animacionOndasToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.animacionOndasToolStripMenuItem.Text = "Animacion Ondas";
             this.animacionOndasToolStripMenuItem.Click += new System.EventHandler(this.animacionOndasToolStripMenuItem_Click);
             // 
             // onda3DToolStripMenuItem
             // 
             this.onda3DToolStripMenuItem.Name = "onda3DToolStripMenuItem";
-            this.onda3DToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.onda3DToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.onda3DToolStripMenuItem.Text = "Onda 3D";
             this.onda3DToolStripMenuItem.Click += new System.EventHandler(this.onda3DToolStripMenuItem_Click);
+            // 
+            // animacion3D1FuenteToolStripMenuItem
+            // 
+            this.animacion3D1FuenteToolStripMenuItem.Name = "animacion3D1FuenteToolStripMenuItem";
+            this.animacion3D1FuenteToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.animacion3D1FuenteToolStripMenuItem.Text = "Animacion 3D 1 Fuente";
+            this.animacion3D1FuenteToolStripMenuItem.Click += new System.EventHandler(this.animacion3D1FuenteToolStripMenuItem_Click);
             // 
             // labelX
             // 
@@ -529,6 +540,13 @@
             this.labelY.Size = new System.Drawing.Size(38, 15);
             this.labelY.TabIndex = 23;
             this.labelY.Text = "label1";
+            // 
+            // animacion3D2FuentesToolStripMenuItem
+            // 
+            this.animacion3D2FuentesToolStripMenuItem.Name = "animacion3D2FuentesToolStripMenuItem";
+            this.animacion3D2FuentesToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.animacion3D2FuentesToolStripMenuItem.Text = "Animacion 3D 2 Fuentes";
+            this.animacion3D2FuentesToolStripMenuItem.Click += new System.EventHandler(this.animacion3D2FuentesToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -611,5 +629,7 @@
         private ToolStripMenuItem ondasToolStripMenuItem;
         private ToolStripMenuItem animacionOndasToolStripMenuItem;
         private ToolStripMenuItem onda3DToolStripMenuItem;
+        private ToolStripMenuItem animacion3D1FuenteToolStripMenuItem;
+        private ToolStripMenuItem animacion3D2FuentesToolStripMenuItem;
     }
 }
