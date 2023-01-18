@@ -82,9 +82,10 @@
             this.onda3DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animacion3D1FuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animacion3D2FuentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.animacion3D3FuentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelX = new System.Windows.Forms.Label();
             this.labelY = new System.Windows.Forms.Label();
-            this.animacion3D3FuentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fourierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -492,7 +493,8 @@
             this.onda3DToolStripMenuItem,
             this.animacion3D1FuenteToolStripMenuItem,
             this.animacion3D2FuentesToolStripMenuItem,
-            this.animacion3D3FuentesToolStripMenuItem});
+            this.animacion3D3FuentesToolStripMenuItem,
+            this.fourierToolStripMenuItem});
             this.parcialIIIToolStripMenuItem.Name = "parcialIIIToolStripMenuItem";
             this.parcialIIIToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.parcialIIIToolStripMenuItem.Text = "Parcial III";
@@ -532,6 +534,13 @@
             this.animacion3D2FuentesToolStripMenuItem.Text = "Animacion 3D 2 Fuentes";
             this.animacion3D2FuentesToolStripMenuItem.Click += new System.EventHandler(this.animacion3D2FuentesToolStripMenuItem_Click);
             // 
+            // animacion3D3FuentesToolStripMenuItem
+            // 
+            this.animacion3D3FuentesToolStripMenuItem.Name = "animacion3D3FuentesToolStripMenuItem";
+            this.animacion3D3FuentesToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.animacion3D3FuentesToolStripMenuItem.Text = "Animacion 3D 3 Fuentes";
+            this.animacion3D3FuentesToolStripMenuItem.Click += new System.EventHandler(this.animacion3D3FuentesToolStripMenuItem_Click);
+            // 
             // labelX
             // 
             this.labelX.AutoSize = true;
@@ -550,12 +559,12 @@
             this.labelY.TabIndex = 23;
             this.labelY.Text = "label1";
             // 
-            // animacion3D3FuentesToolStripMenuItem
+            // fourierToolStripMenuItem
             // 
-            this.animacion3D3FuentesToolStripMenuItem.Name = "animacion3D3FuentesToolStripMenuItem";
-            this.animacion3D3FuentesToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.animacion3D3FuentesToolStripMenuItem.Text = "Animacion 3D 3 Fuentes";
-            this.animacion3D3FuentesToolStripMenuItem.Click += new System.EventHandler(this.animacion3D3FuentesToolStripMenuItem_Click);
+            this.fourierToolStripMenuItem.Name = "fourierToolStripMenuItem";
+            this.fourierToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.fourierToolStripMenuItem.Text = "Fourier";
+            this.fourierToolStripMenuItem.Click += new System.EventHandler(this.fourierToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -641,5 +650,6 @@
         private ToolStripMenuItem animacion3D1FuenteToolStripMenuItem;
         private ToolStripMenuItem animacion3D2FuentesToolStripMenuItem;
         private ToolStripMenuItem animacion3D3FuentesToolStripMenuItem;
+        private ToolStripMenuItem fourierToolStripMenuItem;
     }
 }

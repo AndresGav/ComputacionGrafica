@@ -1630,6 +1630,14 @@ namespace AppGrafica
 
         }
 
+        private void fourierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cFourier obj = new cFourier();
+            obj.t = 1.3;
+            obj.GraficarCuerdaV(bmp);
+            pictureBox1.Image = bmp;
+        }
+
         private void btnParabola_Click(object sender, EventArgs e)
         {
 
