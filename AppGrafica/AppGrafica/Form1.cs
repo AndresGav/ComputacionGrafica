@@ -1633,9 +1633,31 @@ namespace AppGrafica
         private void fourierToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cFourier obj = new cFourier();
-            obj.t = 1.3;
+            obj.t = 1;
+            obj.c = 1;
             obj.GraficarCuerdaV(bmp);
             pictureBox1.Image = bmp;
+        }
+
+        async private void animacionFourierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cFourier cuerda = new cFourier();
+            double t = 1;
+            cuerda.t = 0.3;
+            cuerda.c = 1;
+            do
+            {
+                cuerda.GraficarCuerdaV(bmp);
+                pictureBox1.Image = bmp;
+                Refresh();
+                //bmp = null;
+                bmp = new Bitmap(701, 501);
+                //DrawAxies();
+                await Task.Delay(200);
+                t += 0.01;
+                cuerda.t += t;
+
+            } while (t <= 3);
         }
 
         private void btnParabola_Click(object sender, EventArgs e)

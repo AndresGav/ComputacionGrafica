@@ -83,16 +83,17 @@
             this.animacion3D1FuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animacion3D2FuentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animacion3D3FuentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fourierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.animacionFourierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelX = new System.Windows.Forms.Label();
             this.labelY = new System.Windows.Forms.Label();
-            this.fourierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(0, 22);
             this.pictureBox1.Name = "pictureBox1";
@@ -494,7 +495,8 @@
             this.animacion3D1FuenteToolStripMenuItem,
             this.animacion3D2FuentesToolStripMenuItem,
             this.animacion3D3FuentesToolStripMenuItem,
-            this.fourierToolStripMenuItem});
+            this.fourierToolStripMenuItem,
+            this.animacionFourierToolStripMenuItem});
             this.parcialIIIToolStripMenuItem.Name = "parcialIIIToolStripMenuItem";
             this.parcialIIIToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.parcialIIIToolStripMenuItem.Text = "Parcial III";
@@ -541,6 +543,20 @@
             this.animacion3D3FuentesToolStripMenuItem.Text = "Animacion 3D 3 Fuentes";
             this.animacion3D3FuentesToolStripMenuItem.Click += new System.EventHandler(this.animacion3D3FuentesToolStripMenuItem_Click);
             // 
+            // fourierToolStripMenuItem
+            // 
+            this.fourierToolStripMenuItem.Name = "fourierToolStripMenuItem";
+            this.fourierToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.fourierToolStripMenuItem.Text = "Fourier";
+            this.fourierToolStripMenuItem.Click += new System.EventHandler(this.fourierToolStripMenuItem_Click);
+            // 
+            // animacionFourierToolStripMenuItem
+            // 
+            this.animacionFourierToolStripMenuItem.Name = "animacionFourierToolStripMenuItem";
+            this.animacionFourierToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.animacionFourierToolStripMenuItem.Text = "Animacion Fourier";
+            this.animacionFourierToolStripMenuItem.Click += new System.EventHandler(this.animacionFourierToolStripMenuItem_Click);
+            // 
             // labelX
             // 
             this.labelX.AutoSize = true;
@@ -558,13 +574,6 @@
             this.labelY.Size = new System.Drawing.Size(38, 15);
             this.labelY.TabIndex = 23;
             this.labelY.Text = "label1";
-            // 
-            // fourierToolStripMenuItem
-            // 
-            this.fourierToolStripMenuItem.Name = "fourierToolStripMenuItem";
-            this.fourierToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.fourierToolStripMenuItem.Text = "Fourier";
-            this.fourierToolStripMenuItem.Click += new System.EventHandler(this.fourierToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -651,5 +660,6 @@
         private ToolStripMenuItem animacion3D2FuentesToolStripMenuItem;
         private ToolStripMenuItem animacion3D3FuentesToolStripMenuItem;
         private ToolStripMenuItem fourierToolStripMenuItem;
+        private ToolStripMenuItem animacionFourierToolStripMenuItem;
     }
 }
