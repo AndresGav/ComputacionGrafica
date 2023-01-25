@@ -20,8 +20,8 @@ namespace AppGrafica
         //private double x1 = -7, x2 = 7;
         //private double y1 = -5, y2 = 5;
 
-        private double x1 = -10.5, x2 = 10.5;
-        private double y1 = -7.5, y2 = 7.5;
+        private double x1 = -10, x2 = 10;
+        private double y1 = -7, y2 = 7;
 
         //private double x1 = -10.5, x2 = 10.5;
         //private double y1 = -7.5, y2 = 7.5;

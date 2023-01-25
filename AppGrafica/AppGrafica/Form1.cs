@@ -1660,6 +1660,18 @@ namespace AppGrafica
             } while (t <= 3);
         }
 
+        private void button1_Click_6(object sender, EventArgs e)
+        {
+            Onda objO = new Onda();
+
+            objO.t = 0;
+            objO.w = 4;
+            objO.v = 9;
+            objO.ExamenP3(bmp);
+
+            pictureBox1.Image = bmp;
+        }
+
         private void btnParabola_Click(object sender, EventArgs e)
         {
 
