@@ -85,9 +85,12 @@
             this.animacion3D3FuentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fourierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animacionFourierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.examenParcialIIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proyectoFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ondasDosFuentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ondas3DDosFuentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelX = new System.Windows.Forms.Label();
             this.labelY = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -120,7 +123,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.parcial1ToolStripMenuItem,
             this.parcial2ToolStripMenuItem,
-            this.parcialIIIToolStripMenuItem});
+            this.parcialIIIToolStripMenuItem,
+            this.proyectoFinalToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(822, 24);
@@ -497,7 +501,8 @@
             this.animacion3D2FuentesToolStripMenuItem,
             this.animacion3D3FuentesToolStripMenuItem,
             this.fourierToolStripMenuItem,
-            this.animacionFourierToolStripMenuItem});
+            this.animacionFourierToolStripMenuItem,
+            this.examenParcialIIIToolStripMenuItem});
             this.parcialIIIToolStripMenuItem.Name = "parcialIIIToolStripMenuItem";
             this.parcialIIIToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.parcialIIIToolStripMenuItem.Text = "Parcial III";
@@ -558,6 +563,36 @@
             this.animacionFourierToolStripMenuItem.Text = "Animacion Fourier";
             this.animacionFourierToolStripMenuItem.Click += new System.EventHandler(this.animacionFourierToolStripMenuItem_Click);
             // 
+            // examenParcialIIIToolStripMenuItem
+            // 
+            this.examenParcialIIIToolStripMenuItem.Name = "examenParcialIIIToolStripMenuItem";
+            this.examenParcialIIIToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.examenParcialIIIToolStripMenuItem.Text = "Examen Parcial III";
+            this.examenParcialIIIToolStripMenuItem.Click += new System.EventHandler(this.examenParcialIIIToolStripMenuItem_Click);
+            // 
+            // proyectoFinalToolStripMenuItem
+            // 
+            this.proyectoFinalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ondasDosFuentesToolStripMenuItem,
+            this.ondas3DDosFuentesToolStripMenuItem});
+            this.proyectoFinalToolStripMenuItem.Name = "proyectoFinalToolStripMenuItem";
+            this.proyectoFinalToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.proyectoFinalToolStripMenuItem.Text = "Proyecto Final";
+            // 
+            // ondasDosFuentesToolStripMenuItem
+            // 
+            this.ondasDosFuentesToolStripMenuItem.Name = "ondasDosFuentesToolStripMenuItem";
+            this.ondasDosFuentesToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.ondasDosFuentesToolStripMenuItem.Text = "Ondas 2D dos Fuentes";
+            this.ondasDosFuentesToolStripMenuItem.Click += new System.EventHandler(this.ondasDosFuentesToolStripMenuItem_Click);
+            // 
+            // ondas3DDosFuentesToolStripMenuItem
+            // 
+            this.ondas3DDosFuentesToolStripMenuItem.Name = "ondas3DDosFuentesToolStripMenuItem";
+            this.ondas3DDosFuentesToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.ondas3DDosFuentesToolStripMenuItem.Text = "Ondas 3D dos Fuentes";
+            this.ondas3DDosFuentesToolStripMenuItem.Click += new System.EventHandler(this.ondas3DDosFuentesToolStripMenuItem_Click);
+            // 
             // labelX
             // 
             this.labelX.AutoSize = true;
@@ -576,24 +611,12 @@
             this.labelY.TabIndex = 23;
             this.labelY.Text = "label1";
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(710, 320);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 88);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "EXAMEN P3";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_6);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(822, 532);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.labelY);
             this.Controls.Add(this.labelX);
             this.Controls.Add(this.button2);
@@ -602,7 +625,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Andres Gavino";
+            this.Text = "Andres Gavino & Richard Vinueza";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -674,6 +697,9 @@
         private ToolStripMenuItem animacion3D3FuentesToolStripMenuItem;
         private ToolStripMenuItem fourierToolStripMenuItem;
         private ToolStripMenuItem animacionFourierToolStripMenuItem;
-        private Button button1;
+        private ToolStripMenuItem examenParcialIIIToolStripMenuItem;
+        private ToolStripMenuItem proyectoFinalToolStripMenuItem;
+        private ToolStripMenuItem ondasDosFuentesToolStripMenuItem;
+        private ToolStripMenuItem ondas3DDosFuentesToolStripMenuItem;
     }
 }

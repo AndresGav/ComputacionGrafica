@@ -10,14 +10,15 @@ namespace AppGrafica
     internal class Onda3D: Vector3D
     {
         public double t; 
+        public double w,w2;
         public void Encender(Bitmap bmp, Color selectColor)
         {
             Vector3D v3d = new Vector3D();
             v3d.color = Color.Black;
-            double x, y, z, d, m, w, v;
+            double x, y, z, d, m, v;
             x = -9;
             m = 0.7;
-            w = 1.5;
+           
             v = 9.8;
            
             do
@@ -40,10 +41,10 @@ namespace AppGrafica
 
         public void Interferencia2F(Bitmap bmp, Color selectColor)
         {
-            double x, y, z1, z2, d1, d2,w,d,v,m;
+            double x, y, z1, z2, d1, d2,d,v,m;
             x = -9;
             m = 0.7;
-            w = 1.5;
+            
             v = 9.8;
            
 
@@ -64,13 +65,13 @@ namespace AppGrafica
                     d2 = (Math.Sqrt((Math.Pow((x + 0), 2)) + (Math.Pow((y + 3), 2))));
 
                     z1 = w * (d1 - v * t);
-                    z2 = w * (d2 - v * t);
+                    z2 = w2 * (d2 - v * t);
 
                     v3d.z0 = (m * Math.Sin(z1)) + (m * Math.Sin(z2));
                     v3d.Encender(bmp);
                     y += 0.1;
                 } while (y <= 6.5);
-                x += 0.1;
+                x += 0.05;
             } while (x <= 9);
         }
 

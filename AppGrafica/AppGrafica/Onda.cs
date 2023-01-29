@@ -9,7 +9,7 @@ namespace AppGrafica
 {
     internal class Onda: Vector
     {
-        public double t,w,v;
+        public double t,w,w2,v;
         Color[] paleta1 = new Color[16];
 
         public void GrafO(Bitmap bmp)
@@ -51,13 +51,58 @@ namespace AppGrafica
                 for( j = 0; j < 500; j++)
                 {
                     Tranformar(i, j, out x, out y);
-                    z = 1.5 * (Math.Sqrt( ( Math.Pow(x,2)) + (Math.Pow(y, 2))) ) - 9.3 * t;
+                    z = w * (Math.Sqrt( ( Math.Pow(x,2)) + (Math.Pow(y, 2))) ) - 9.3 * t;
                     z = Math.Sin(z) + 1;
                     color = (int)(z * 7.5);
                     c = paleta1[color];
 
                     bmp.SetPixel(i, j, c);
                     
+                }
+            }
+        }
+
+
+        public void Interferencia2F(Bitmap bmp)
+        {
+            int i;
+         
+            paleta1[0] = Color.Black;
+            paleta1[1] = Color.Navy;
+            paleta1[2] = Color.Green;
+            paleta1[3] = Color.Aqua;
+            paleta1[4] = Color.Red;
+            paleta1[5] = Color.Purple;
+            paleta1[6] = Color.Maroon;
+            paleta1[7] = Color.LightGray;
+            paleta1[8] = Color.DarkGray;
+            paleta1[9] = Color.Blue;
+            paleta1[10] = Color.Lime;
+            paleta1[11] = Color.Silver;
+            paleta1[12] = Color.Teal;
+            paleta1[13] = Color.Fuchsia;
+            paleta1[14] = Color.Yellow;
+            paleta1[15] = Color.White;
+
+            int j, color0;
+            double x, y, z, z1, z2;
+            Color c;
+
+            for (i = 0; i < 700; i++)
+            {
+                for (j = 0; j < 500; j++)
+                {
+                    Tranformar(i, j, out x, out y);
+                    z1 = w * (Math.Sqrt((x - 0) * (x - 0) + (y - 4) * (y - 4)) - (v * t));
+                    z2 = w2 * (Math.Sqrt((x - 0) * (x - 0) + (y + 3.5) * (y + 3.5)) - (v * t));
+                    
+                    z1 = Math.Sin(z1) + 1;
+                    z2 = Math.Sin(z2) + 1;
+                  
+                    z = z1 + z2 ;
+                    color0 = (int)(z * 2.5);
+                    c = paleta1[color0];
+                    bmp.SetPixel(i, j, c);
                 }
             }
         }
